@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-03-29T05:57:50.817Z",
+  "config": {
+    "scoreThreshold": 7,
+    "volatileBlocked": true,
+    "adaptiveMM": true,
+    "maxTrades": 200
+  },
+  "results": {
+    "totalTrades": 11,
+    "winCount": 6,
+    "lossCount": 5,
+    "winrate": 54.54545454545454,
+    "totalProfit": 0.0607878610859558,
+    "profitFactor": 1.001215757221719,
+    "maxDrawdown": 20,
+    "drawdownPercent": 2,
+    "maxLosingStreak": 1,
+    "skippedVolatile": 0,
+    "skippedLowScore": 23
+  },
+  "execution": {
+    "fillRate": 100,
+    "avgLatency": 183.59156832413584,
+    "totalOrders": 11
+  },
+  "targets": {
+    "winrate": {
+      "target": 58,
+      "actual": 54.54545454545454,
+      "passed": false
+    },
+    "profitFactor": {
+      "target": 1.4,
+      "actual": 1.001215757221719,
+      "passed": false
+    },
+    "drawdown": {
+      "target": 5,
+      "actual": 2,
+      "passed": true
+    }
+  },
+  "allPassed": false
+}

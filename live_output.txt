@@ -1,0 +1,36 @@
+[2026-03-29T14:40:27.093Z] INFO: News Filter initialized (OFFLINE MODE)
+
+================================================================================
+     IQ OPTION SMART BOT - LIVE MODE
+================================================================================
+
+⚠️  Using default config
+💰 Money Manager initialized: $1000
+   Trade size: 1% = $10
+   Max daily loss: 5% = $50.00
+   Profit Lock: Stop if balance < 95% of peak
+   Scaling: +20% capital at +10% monthly profit
+   Withdrawal: 30% of profit at +10% monthly profit
+   Weekly Protection: Stop 7 days if weekly loss >= 10%
+⚠️  LIVE TRADING MODE - REAL MONEY AT RISK!
+Press Ctrl+C within 5 seconds to cancel...
+
+🔌 Connecting to IQ Option WebSocket API...
+📡 Connecting to IQ Option WebSocket...
+🔥 HARD PROOF: 📡 CONNECTED to IQ Option at 2026-03-29T14:40:33.190Z
+🔑 Logging in...
+📤 Sending: login
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795234020}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795235031}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795236042}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795237054}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795238066}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795239078}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795240088}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795241099}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795242109}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795243121}
+🔥 HARD PROOF: 📥 RAW MESSAGE: {"name":"timeSync","msg":1774795244133}
+⚠️ WebSocket Disconnected
+🔄 Reconnecting... Attempt 1/5
+📡 Connecting to IQ Option WebSocket...

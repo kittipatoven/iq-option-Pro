@@ -1,0 +1,2975 @@
+[
+  {
+    "id": 1,
+    "rsi": "60.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1000.00",
+    "edgeScore": 4
+  },
+  {
+    "id": 2,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 3,
+    "rsi": "71.8",
+    "conditions": 3,
+    "score": 5,
+    "amount": 9,
+    "result": "WIN",
+    "profit": "7.65",
+    "isWin": true,
+    "balanceBefore": "990.00",
+    "edgeScore": 5
+  },
+  {
+    "id": 4,
+    "rsi": "67.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "997.65",
+    "edgeScore": 4
+  },
+  {
+    "id": 5,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 6,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 7,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 8,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 9,
+    "rsi": "69.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 9,
+    "result": "WIN",
+    "profit": "7.65",
+    "isWin": true,
+    "balanceBefore": "987.65",
+    "edgeScore": 4
+  },
+  {
+    "id": 10,
+    "rsi": "65.5",
+    "conditions": 3,
+    "score": 4,
+    "amount": 9,
+    "result": "WIN",
+    "profit": "7.65",
+    "isWin": true,
+    "balanceBefore": "995.30",
+    "edgeScore": 4
+  },
+  {
+    "id": 11,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 12,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 13,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 14,
+    "rsi": "80.4",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1002.95",
+    "edgeScore": 5
+  },
+  {
+    "id": 15,
+    "rsi": "66.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1011.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 16,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 17,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 18,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 19,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 20,
+    "rsi": "67.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1001.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 21,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 22,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 23,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 24,
+    "rsi": "78.4",
+    "conditions": 3,
+    "score": 5,
+    "amount": 9,
+    "result": "WIN",
+    "profit": "7.65",
+    "isWin": true,
+    "balanceBefore": "991.45",
+    "edgeScore": 5
+  },
+  {
+    "id": 25,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 26,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 27,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 28,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 29,
+    "rsi": "61.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "999.10",
+    "edgeScore": 4
+  },
+  {
+    "id": 30,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 31,
+    "rsi": "62.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 4,
+    "result": "WIN",
+    "profit": "3.40",
+    "isWin": true,
+    "balanceBefore": "989.10",
+    "edgeScore": 4
+  },
+  {
+    "id": 32,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 33,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 34,
+    "rsi": "67.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 4,
+    "result": "WIN",
+    "profit": "3.40",
+    "isWin": true,
+    "balanceBefore": "992.50",
+    "edgeScore": 4
+  },
+  {
+    "id": 35,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 36,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 37,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 38,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 39,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 40,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 41,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 42,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 43,
+    "rsi": "62.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "995.90",
+    "edgeScore": 4
+  },
+  {
+    "id": 44,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 45,
+    "rsi": "60.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1004.40",
+    "edgeScore": 4
+  },
+  {
+    "id": 46,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 47,
+    "rsi": "64.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 9,
+    "result": "WIN",
+    "profit": "7.65",
+    "isWin": true,
+    "balanceBefore": "994.40",
+    "edgeScore": 4
+  },
+  {
+    "id": 48,
+    "rsi": "67.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1002.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 49,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 50,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 51,
+    "rsi": "68.9",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1010.55",
+    "edgeScore": 4
+  },
+  {
+    "id": 52,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 53,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 54,
+    "rsi": "67.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1000.55",
+    "edgeScore": 4
+  },
+  {
+    "id": 55,
+    "rsi": "62.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1009.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 56,
+    "rsi": "68.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1017.55",
+    "edgeScore": 4
+  },
+  {
+    "id": 57,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 58,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 59,
+    "rsi": "68.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1026.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 60,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 61,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 62,
+    "rsi": "60.9",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1016.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 63,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 64,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 65,
+    "rsi": "62.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1006.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 66,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 67,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 68,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 69,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 70,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 71,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 72,
+    "rsi": "79.3",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1014.55",
+    "edgeScore": 5
+  },
+  {
+    "id": 73,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 74,
+    "rsi": "68.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1004.55",
+    "edgeScore": 4
+  },
+  {
+    "id": 75,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 76,
+    "rsi": "65.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "LOSS",
+    "profit": "-5.00",
+    "isWin": false,
+    "balanceBefore": "1008.80",
+    "edgeScore": 4
+  },
+  {
+    "id": 77,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 78,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 79,
+    "rsi": "76.9",
+    "conditions": 3,
+    "score": 5,
+    "amount": 5,
+    "result": "LOSS",
+    "profit": "-5.00",
+    "isWin": false,
+    "balanceBefore": "1003.80",
+    "edgeScore": 5
+  },
+  {
+    "id": 80,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 81,
+    "rsi": "69.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 4,
+    "result": "WIN",
+    "profit": "3.40",
+    "isWin": true,
+    "balanceBefore": "998.80",
+    "edgeScore": 4
+  },
+  {
+    "id": 82,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 83,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 84,
+    "rsi": "69.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "LOSS",
+    "profit": "-5.00",
+    "isWin": false,
+    "balanceBefore": "1002.20",
+    "edgeScore": 4
+  },
+  {
+    "id": 85,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 86,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 87,
+    "rsi": "67.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 4,
+    "result": "WIN",
+    "profit": "3.40",
+    "isWin": true,
+    "balanceBefore": "997.20",
+    "edgeScore": 4
+  },
+  {
+    "id": 88,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 89,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 90,
+    "rsi": "67.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1000.60",
+    "edgeScore": 4
+  },
+  {
+    "id": 91,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 92,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 93,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 94,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 95,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 96,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 97,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 98,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 99,
+    "rsi": "65.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1004.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 100,
+    "rsi": "65.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1013.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 101,
+    "rsi": "65.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1021.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 102,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 103,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 104,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 105,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 106,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 107,
+    "rsi": "64.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1030.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 108,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 109,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 110,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 111,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 112,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 113,
+    "rsi": "66.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1038.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 114,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 115,
+    "rsi": "67.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1047.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 116,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 117,
+    "rsi": "63.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1037.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 118,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 119,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 120,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 121,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 122,
+    "rsi": "61.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1027.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 123,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 124,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 125,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 126,
+    "rsi": "66.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1035.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 127,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 128,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 129,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 130,
+    "rsi": "67.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1044.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 131,
+    "rsi": "66.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1052.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 132,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 133,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 134,
+    "rsi": "69.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1042.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 135,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 136,
+    "rsi": "66.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1032.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 137,
+    "rsi": "69.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1041.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 138,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 139,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 140,
+    "rsi": "66.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1031.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 141,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 142,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 143,
+    "rsi": "65.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "LOSS",
+    "profit": "-5.00",
+    "isWin": false,
+    "balanceBefore": "1035.60",
+    "edgeScore": 4
+  },
+  {
+    "id": 144,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 145,
+    "rsi": "70.2",
+    "conditions": 3,
+    "score": 5,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1030.60",
+    "edgeScore": 5
+  },
+  {
+    "id": 146,
+    "rsi": "69.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1034.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 147,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 148,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 149,
+    "rsi": "68.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1043.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 150,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 151,
+    "rsi": "63.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1051.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 152,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 153,
+    "rsi": "71.2",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1060.35",
+    "edgeScore": 5
+  },
+  {
+    "id": 154,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 155,
+    "rsi": "82.1",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1050.35",
+    "edgeScore": 5
+  },
+  {
+    "id": 156,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 157,
+    "rsi": "73.1",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1058.85",
+    "edgeScore": 5
+  },
+  {
+    "id": 158,
+    "rsi": "69.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1067.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 159,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 160,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 161,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 162,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 163,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 164,
+    "rsi": "70.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1057.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 165,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 166,
+    "rsi": "63.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "LOSS",
+    "profit": "-5.00",
+    "isWin": false,
+    "balanceBefore": "1047.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 167,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 168,
+    "rsi": "66.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1042.35",
+    "edgeScore": 4
+  },
+  {
+    "id": 169,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 170,
+    "rsi": "64.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "LOSS",
+    "profit": "-5.00",
+    "isWin": false,
+    "balanceBefore": "1046.60",
+    "edgeScore": 4
+  },
+  {
+    "id": 171,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 172,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 173,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 174,
+    "rsi": "67.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1041.60",
+    "edgeScore": 4
+  },
+  {
+    "id": 175,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 176,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 177,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 178,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 179,
+    "rsi": "68.9",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1045.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 180,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 181,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 182,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 183,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 184,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 185,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 186,
+    "rsi": "83.6",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1050.10",
+    "edgeScore": 5
+  },
+  {
+    "id": 187,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 188,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 189,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 190,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 191,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 192,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 193,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 194,
+    "rsi": "72.8",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1040.10",
+    "edgeScore": 5
+  },
+  {
+    "id": 195,
+    "rsi": "61.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1048.60",
+    "edgeScore": 4
+  },
+  {
+    "id": 196,
+    "rsi": "61.5",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1057.10",
+    "edgeScore": 4
+  },
+  {
+    "id": 197,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 198,
+    "rsi": "80.0",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1047.10",
+    "edgeScore": 5
+  },
+  {
+    "id": 199,
+    "rsi": "62.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1055.60",
+    "edgeScore": 4
+  },
+  {
+    "id": 200,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 201,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 202,
+    "rsi": "67.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1064.10",
+    "edgeScore": 4
+  },
+  {
+    "id": 203,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 204,
+    "rsi": "62.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1054.10",
+    "edgeScore": 4
+  },
+  {
+    "id": 205,
+    "rsi": "62.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1062.60",
+    "edgeScore": 4
+  },
+  {
+    "id": 206,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 207,
+    "rsi": "83.6",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1071.10",
+    "edgeScore": 5
+  },
+  {
+    "id": 208,
+    "rsi": "80.0",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1079.60",
+    "edgeScore": 5
+  },
+  {
+    "id": 209,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 210,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 211,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 212,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 213,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 214,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 215,
+    "rsi": "67.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1088.10",
+    "edgeScore": 4
+  },
+  {
+    "id": 216,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 217,
+    "rsi": "64.5",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "LOSS",
+    "profit": "-11.00",
+    "isWin": false,
+    "balanceBefore": "1097.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 218,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 219,
+    "rsi": "69.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1086.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 220,
+    "rsi": "69.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1094.95",
+    "edgeScore": 4
+  },
+  {
+    "id": 221,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 222,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 223,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 224,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 225,
+    "rsi": "62.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1084.95",
+    "edgeScore": 4
+  },
+  {
+    "id": 226,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 227,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 228,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 229,
+    "rsi": "60.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1093.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 230,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 231,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 232,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 233,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 234,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 235,
+    "rsi": "66.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1083.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 236,
+    "rsi": "79.1",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "LOSS",
+    "profit": "-10.00",
+    "isWin": false,
+    "balanceBefore": "1087.70",
+    "edgeScore": 5
+  },
+  {
+    "id": 237,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 238,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 239,
+    "rsi": "69.9",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "LOSS",
+    "profit": "-5.00",
+    "isWin": false,
+    "balanceBefore": "1077.70",
+    "edgeScore": 4
+  },
+  {
+    "id": 240,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 241,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 242,
+    "rsi": "75.6",
+    "conditions": 3,
+    "score": 5,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1072.70",
+    "edgeScore": 5
+  },
+  {
+    "id": 243,
+    "rsi": "63.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 5,
+    "result": "WIN",
+    "profit": "4.25",
+    "isWin": true,
+    "balanceBefore": "1076.95",
+    "edgeScore": 4
+  },
+  {
+    "id": 244,
+    "rsi": "79.1",
+    "conditions": 3,
+    "score": 5,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1081.20",
+    "edgeScore": 5
+  },
+  {
+    "id": 245,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 246,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 247,
+    "rsi": "69.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 10,
+    "result": "WIN",
+    "profit": "8.50",
+    "isWin": true,
+    "balanceBefore": "1089.70",
+    "edgeScore": 4
+  },
+  {
+    "id": 248,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 249,
+    "rsi": "69.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1098.20",
+    "edgeScore": 4
+  },
+  {
+    "id": 250,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 251,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 252,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 253,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 254,
+    "rsi": "64.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1107.55",
+    "edgeScore": 4
+  },
+  {
+    "id": 255,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 256,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 257,
+    "rsi": "66.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "LOSS",
+    "profit": "-11.00",
+    "isWin": false,
+    "balanceBefore": "1116.90",
+    "edgeScore": 4
+  },
+  {
+    "id": 258,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 259,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 260,
+    "rsi": "77.0",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1105.90",
+    "edgeScore": 5
+  },
+  {
+    "id": 261,
+    "rsi": "69.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1115.25",
+    "edgeScore": 4
+  },
+  {
+    "id": 262,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 263,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 264,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 265,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 266,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 267,
+    "rsi": "81.0",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1124.60",
+    "edgeScore": 5
+  },
+  {
+    "id": 268,
+    "rsi": "77.5",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "LOSS",
+    "profit": "-11.00",
+    "isWin": false,
+    "balanceBefore": "1133.95",
+    "edgeScore": 5
+  },
+  {
+    "id": 269,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 270,
+    "rsi": "62.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1122.95",
+    "edgeScore": 4
+  },
+  {
+    "id": 271,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 272,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 273,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 274,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 275,
+    "rsi": "61.9",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "LOSS",
+    "profit": "-11.00",
+    "isWin": false,
+    "balanceBefore": "1132.30",
+    "edgeScore": 4
+  },
+  {
+    "id": 276,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 277,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 278,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 279,
+    "rsi": "63.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1121.30",
+    "edgeScore": 4
+  },
+  {
+    "id": 280,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 281,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 282,
+    "rsi": "62.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1130.65",
+    "edgeScore": 4
+  },
+  {
+    "id": 283,
+    "rsi": "76.6",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1140.00",
+    "edgeScore": 5
+  },
+  {
+    "id": 284,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 285,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 286,
+    "rsi": "79.4",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "LOSS",
+    "profit": "-11.00",
+    "isWin": false,
+    "balanceBefore": "1149.35",
+    "edgeScore": 5
+  },
+  {
+    "id": 287,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 288,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 289,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 290,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 291,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 292,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 293,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 294,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 295,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 296,
+    "rsi": "75.6",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1138.35",
+    "edgeScore": 5
+  },
+  {
+    "id": 297,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 298,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 299,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 300,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 301,
+    "rsi": "69.9",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "LOSS",
+    "profit": "-11.00",
+    "isWin": false,
+    "balanceBefore": "1147.70",
+    "edgeScore": 4
+  },
+  {
+    "id": 302,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 303,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 304,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 305,
+    "rsi": "64.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1136.70",
+    "edgeScore": 4
+  },
+  {
+    "id": 306,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 307,
+    "rsi": "63.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1146.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 308,
+    "rsi": "70.8",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1155.40",
+    "edgeScore": 5
+  },
+  {
+    "id": 309,
+    "rsi": "64.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "LOSS",
+    "profit": "-11.00",
+    "isWin": false,
+    "balanceBefore": "1164.75",
+    "edgeScore": 4
+  },
+  {
+    "id": 310,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 311,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 312,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 313,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 314,
+    "rsi": "69.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1153.75",
+    "edgeScore": 4
+  },
+  {
+    "id": 315,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 316,
+    "rsi": "62.5",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "LOSS",
+    "profit": "-11.00",
+    "isWin": false,
+    "balanceBefore": "1163.10",
+    "edgeScore": 4
+  },
+  {
+    "id": 317,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 318,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 319,
+    "rsi": "81.2",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1152.10",
+    "edgeScore": 5
+  },
+  {
+    "id": 320,
+    "rsi": "68.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1161.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 321,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 322,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 323,
+    "rsi": "79.4",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1170.80",
+    "edgeScore": 5
+  },
+  {
+    "id": 324,
+    "rsi": "71.2",
+    "conditions": 3,
+    "score": 5,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1180.15",
+    "edgeScore": 5
+  },
+  {
+    "id": 325,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 326,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 327,
+    "rsi": "65.5",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1189.50",
+    "edgeScore": 4
+  },
+  {
+    "id": 328,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 329,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 330,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 331,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 332,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 333,
+    "rsi": "66.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "LOSS",
+    "profit": "-12.00",
+    "isWin": false,
+    "balanceBefore": "1199.70",
+    "edgeScore": 4
+  },
+  {
+    "id": 334,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 335,
+    "rsi": "65.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 11,
+    "result": "WIN",
+    "profit": "9.35",
+    "isWin": true,
+    "balanceBefore": "1187.70",
+    "edgeScore": 4
+  },
+  {
+    "id": 336,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 337,
+    "rsi": "65.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1197.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 338,
+    "rsi": "66.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1207.25",
+    "edgeScore": 4
+  },
+  {
+    "id": 339,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 340,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 341,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 342,
+    "rsi": "63.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1217.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 343,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 344,
+    "rsi": "61.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "LOSS",
+    "profit": "-12.00",
+    "isWin": false,
+    "balanceBefore": "1227.65",
+    "edgeScore": 4
+  },
+  {
+    "id": 345,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 346,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 347,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 348,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 349,
+    "rsi": "67.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "LOSS",
+    "profit": "-12.00",
+    "isWin": false,
+    "balanceBefore": "1215.65",
+    "edgeScore": 4
+  },
+  {
+    "id": 350,
+    "skipped": true,
+    "reason": "Loss cooldown active"
+  },
+  {
+    "id": 351,
+    "rsi": "67.4",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1203.65",
+    "edgeScore": 4
+  },
+  {
+    "id": 352,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 353,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 354,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 355,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 356,
+    "rsi": "62.8",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1213.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 357,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 358,
+    "rsi": "76.0",
+    "conditions": 3,
+    "score": 5,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1224.05",
+    "edgeScore": 5
+  },
+  {
+    "id": 359,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 360,
+    "rsi": "61.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1234.25",
+    "edgeScore": 4
+  },
+  {
+    "id": 361,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 362,
+    "rsi": "68.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "LOSS",
+    "profit": "-12.00",
+    "isWin": false,
+    "balanceBefore": "1244.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 363,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 364,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 365,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 366,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 367,
+    "rsi": "68.3",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1232.45",
+    "edgeScore": 4
+  },
+  {
+    "id": 368,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 369,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 370,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 371,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 372,
+    "rsi": "79.7",
+    "conditions": 3,
+    "score": 5,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1242.65",
+    "edgeScore": 5
+  },
+  {
+    "id": 373,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 374,
+    "rsi": "65.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1252.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 375,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 376,
+    "rsi": "64.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "LOSS",
+    "profit": "-12.00",
+    "isWin": false,
+    "balanceBefore": "1263.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 377,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 378,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 379,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 380,
+    "rsi": "66.5",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1251.05",
+    "edgeScore": 4
+  },
+  {
+    "id": 381,
+    "rsi": "66.7",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1261.25",
+    "edgeScore": 4
+  },
+  {
+    "id": 382,
+    "rsi": "70.3",
+    "conditions": 3,
+    "score": 5,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1271.45",
+    "edgeScore": 5
+  },
+  {
+    "id": 383,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 384,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 385,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 386,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 387,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 388,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 389,
+    "rsi": "64.0",
+    "conditions": 3,
+    "score": 4,
+    "amount": 12,
+    "result": "WIN",
+    "profit": "10.20",
+    "isWin": true,
+    "balanceBefore": "1281.65",
+    "edgeScore": 4
+  },
+  {
+    "id": 390,
+    "rsi": "66.2",
+    "conditions": 3,
+    "score": 4,
+    "amount": 13,
+    "result": "WIN",
+    "profit": "11.05",
+    "isWin": true,
+    "balanceBefore": "1291.85",
+    "edgeScore": 4
+  },
+  {
+    "id": 391,
+    "rsi": "77.1",
+    "conditions": 3,
+    "score": 5,
+    "amount": 13,
+    "result": "WIN",
+    "profit": "11.05",
+    "isWin": true,
+    "balanceBefore": "1302.90",
+    "edgeScore": 5
+  },
+  {
+    "id": 392,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 393,
+    "rsi": "71.3",
+    "conditions": 3,
+    "score": 5,
+    "amount": 13,
+    "result": "WIN",
+    "profit": "11.05",
+    "isWin": true,
+    "balanceBefore": "1313.95",
+    "edgeScore": 5
+  },
+  {
+    "id": 394,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 395,
+    "rsi": "66.1",
+    "conditions": 3,
+    "score": 4,
+    "amount": 13,
+    "result": "WIN",
+    "profit": "11.05",
+    "isWin": true,
+    "balanceBefore": "1325.00",
+    "edgeScore": 4
+  },
+  {
+    "id": 396,
+    "rsi": "71.9",
+    "conditions": 3,
+    "score": 5,
+    "amount": 13,
+    "result": "WIN",
+    "profit": "11.05",
+    "isWin": true,
+    "balanceBefore": "1336.05",
+    "edgeScore": 5
+  },
+  {
+    "id": 397,
+    "rsi": "68.5",
+    "conditions": 3,
+    "score": 4,
+    "amount": 13,
+    "result": "WIN",
+    "profit": "11.05",
+    "isWin": true,
+    "balanceBefore": "1347.10",
+    "edgeScore": 4
+  },
+  {
+    "id": 398,
+    "rsi": "68.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 13,
+    "result": "LOSS",
+    "profit": "-13.00",
+    "isWin": false,
+    "balanceBefore": "1358.15",
+    "edgeScore": 4
+  },
+  {
+    "id": 399,
+    "skipped": true,
+    "reason": "Edge filter blocked"
+  },
+  {
+    "id": 400,
+    "rsi": "67.6",
+    "conditions": 3,
+    "score": 4,
+    "amount": 13,
+    "result": "WIN",
+    "profit": "11.05",
+    "isWin": true,
+    "balanceBefore": "1345.15",
+    "edgeScore": 4
+  }
+]

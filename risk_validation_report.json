@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-03-29T07:10:38.088Z",
+  "config": {
+    "totalAttempts": 300,
+    "strategy": "EDGE_WITH_RISK_CONTROL",
+    "hardStopDrawdown": 10,
+    "killSwitchBalance": 90,
+    "dailyLossLimit": 5
+  },
+  "results": {
+    "totalTrades": 144,
+    "winrate": 59.02777777777778,
+    "profitFactor": 1.2469081363773304,
+    "totalProfit": 194.31670332895908,
+    "maxDrawdown": 6.232738572690004,
+    "finalBalance": 2175.6334066579157,
+    "totalReturn": 117.56334066579157
+  },
+  "riskControls": {
+    "stoppedByDrawdown": false,
+    "stoppedByKillSwitch": false,
+    "stoppedByDailyLoss": false
+  },
+  "targets": {
+    "drawdown": {
+      "target": 10,
+      "actual": 6.232738572690004,
+      "passed": true
+    },
+    "profitFactor": {
+      "target": 1.25,
+      "actual": 1.2469081363773304,
+      "passed": false
+    },
+    "winrate": {
+      "target": 55,
+      "actual": 59.02777777777778,
+      "passed": true
+    }
+  },
+  "allPassed": false
+}

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-03-30T04:23:15.462Z",
+  "context": "Trade 1",
+  "message": "binary-options.open-option response timeout (request_id: 1774844565449_124279)",
+  "stack": "Error: binary-options.open-option response timeout (request_id: 1774844565449_124279)\n    at Timeout._onTimeout (D:\\เขียนโค้ด\\iq-option-Pro\\src\\api\\iqOptionClient.js:1739:24)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+}

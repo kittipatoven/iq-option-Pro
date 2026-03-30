@@ -1,0 +1,1963 @@
+[],
+  {
+    "id": 5,
+    "timestamp": "2026-03-29T09:16:43.124Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 37,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1002907703265308,
+      "middle": 1.0999320315832113,
+      "lower": 1.0995732928398918,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-03-29T09:17:43.537Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 50,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1004613186033338,
+      "middle": 1.1001745076152867,
+      "lower": 1.0998876966272395,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-03-29T09:18:43.577Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 52,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1006213813754206,
+      "middle": 1.1001519952387642,
+      "lower": 1.0996826091021077,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-03-29T09:20:13.628Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 58,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1003473082148838,
+      "middle": 1.100094445313088,
+      "lower": 1.0998415824112924,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-03-29T09:21:44.085Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 39,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1002585401574583,
+      "middle": 1.099863571616012,
+      "lower": 1.0994686030745655,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-03-29T09:22:05.483Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "LOW",
+      "momentum": "STRONG_BULLISH",
+      "overall": "SIDEWAYS"
+    },
+    "rsi": {
+      "value": 22,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1001509058519314,
+      "middle": 1.0991901994956481,
+      "lower": 1.0982294931393648,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 6,
+      "signalStrength": "medium",
+      "shouldTrade": true
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 2
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-03-29T09:23:14.143Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 38,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1001141612537648,
+      "middle": 1.0997373813765154,
+      "lower": 1.099360601499266,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-03-29T09:24:14.546Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 15,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1004287773212995,
+      "middle": 1.099368165957342,
+      "lower": 1.0983075545933845,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-03-29T09:24:35.570Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 51,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.10017818065546,
+      "middle": 1.099852320745605,
+      "lower": 1.09952646083575,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -9,
+    "amount": 9
+  },
+  {
+    "id": 12,
+    "timestamp": "2026-03-29T09:25:44.585Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 21,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1002594697954229,
+      "middle": 1.0997143623062904,
+      "lower": 1.0991692548171579,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 6,
+      "signalStrength": "medium",
+      "shouldTrade": true
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 2
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 13,
+    "timestamp": "2026-03-29T09:27:45.015Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 60,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1003834898453295,
+      "middle": 1.1001521316965839,
+      "lower": 1.0999207735478382,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-03-29T09:28:05.665Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 44,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1003327377329164,
+      "middle": 1.0998045600691797,
+      "lower": 1.099276382405443,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -9,
+    "amount": 9
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-03-29T09:30:05.734Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "LOW",
+      "momentum": "STRONG_BULLISH",
+      "overall": "SIDEWAYS"
+    },
+    "rsi": {
+      "value": 52,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1001772592984855,
+      "middle": 1.0999135609419546,
+      "lower": 1.0996498625854236,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -4,
+    "amount": 4
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-03-29T09:31:06.144Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 46,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1001126378430437,
+      "middle": 1.0997257675944323,
+      "lower": 1.099338897345821,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -4,
+    "amount": 4
+  },
+  {
+    "id": 14,
+    "timestamp": "2026-03-29T09:31:45.493Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "LOW",
+      "momentum": "BULLISH",
+      "overall": "SIDEWAYS"
+    },
+    "rsi": {
+      "value": 22,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.0999707761562991,
+      "middle": 1.0993319768262628,
+      "lower": 1.0986931774962265,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -11,
+    "amount": 11
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-03-29T09:32:06.542Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 53,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.100170834232447,
+      "middle": 1.0999846918246061,
+      "lower": 1.0997985494167652,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -2,
+    "amount": 2
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-03-29T09:33:06.581Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 36,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1003080036934485,
+      "middle": 1.0997011469697937,
+      "lower": 1.099094290246139,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -2,
+    "amount": 2
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-03-29T09:43:19.336Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 52,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1005266757848082,
+      "middle": 1.1002029688731503,
+      "lower": 1.0998792619614923,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-03-29T09:44:19.739Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 79,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1011781561330254,
+      "middle": 1.1006277752270235,
+      "lower": 1.1000773943210216,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-03-29T09:45:50.147Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 65,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1008612078014024,
+      "middle": 1.1003429973511847,
+      "lower": 1.099824786900967,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-03-29T09:47:20.575Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 36,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1003638395806965,
+      "middle": 1.099985218360063,
+      "lower": 1.0996065971394293,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-03-29T09:50:50.687Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "LOW",
+      "momentum": "BULLISH",
+      "overall": "SIDEWAYS"
+    },
+    "rsi": {
+      "value": 13,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1002383552539339,
+      "middle": 1.0993346978481142,
+      "lower": 1.0984310404422946,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-03-29T09:51:51.099Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 58,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1005675619008721,
+      "middle": 1.100051071506028,
+      "lower": 1.099534581111184,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-03-29T09:53:21.522Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "LOW",
+      "momentum": "STRONG_BEARISH",
+      "overall": "SIDEWAYS"
+    },
+    "rsi": {
+      "value": 65,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1008951273008445,
+      "middle": 1.1004251143681623,
+      "lower": 1.09995510143548,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-03-29T09:55:20.272Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 24,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.0999716220200069,
+      "middle": 1.0992877183240535,
+      "lower": 1.0986038146281,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-03-29T09:56:20.677Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 68,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1009853731804622,
+      "middle": 1.1001545509001036,
+      "lower": 1.099323728619745,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-03-29T09:57:15.969Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 42,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1002901853230864,
+      "middle": 1.0999326478741476,
+      "lower": 1.0995751104252087,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-03-29T09:58:15.999Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 66,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1013603169653754,
+      "middle": 1.1004548181454292,
+      "lower": 1.099549319325483,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-03-29T09:59:21.118Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 80,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1014067735847064,
+      "middle": 1.1004125184166347,
+      "lower": 1.099418263248563,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-03-29T09:59:46.427Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 24,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.0999943577337432,
+      "middle": 1.0995289914947424,
+      "lower": 1.0990636252557415,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-03-29T10:00:46.467Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 82,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.101227408790047,
+      "middle": 1.1005068968166234,
+      "lower": 1.0997863848431997,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-03-29T10:02:46.523Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 11,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1001444314933546,
+      "middle": 1.0993151102278182,
+      "lower": 1.0984857889622819,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-03-29T10:03:46.931Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 34,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1006247169858712,
+      "middle": 1.0997692689111183,
+      "lower": 1.0989138208363654,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-03-29T10:05:47.366Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 58,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1005615438915666,
+      "middle": 1.0997851743120381,
+      "lower": 1.0990088047325097,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-03-29T10:06:47.765Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 77,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1013864064561492,
+      "middle": 1.1006118557392461,
+      "lower": 1.0998373050223431,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 4.25,
+    "amount": 5
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-03-29T10:09:18.201Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 26,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.100541595061403,
+      "middle": 1.0996326419310856,
+      "lower": 1.098723688800768,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-03-29T10:16:26.607Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "LOW",
+      "momentum": "BEARISH",
+      "overall": "SIDEWAYS"
+    },
+    "rsi": {
+      "value": 45,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1002609055607435,
+      "middle": 1.0997872803547204,
+      "lower": 1.0993136551486973,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-03-29T10:17:56.661Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 42,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1003153720313743,
+      "middle": 1.1000174784096894,
+      "lower": 1.0997195847880046,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-03-29T10:19:57.101Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 7,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1000703555677802,
+      "middle": 1.0988705983698217,
+      "lower": 1.0976708411718632,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-03-29T10:21:27.157Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 49,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1004736790604603,
+      "middle": 1.1001797922144638,
+      "lower": 1.0998859053684673,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-03-29T10:23:57.260Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 51,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1002222400241248,
+      "middle": 1.099950885829402,
+      "lower": 1.0996795316346792,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-03-29T10:27:02.369Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 61,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1477165922247963,
+      "middle": 1.1476420000000003,
+      "lower": 1.1475674077752043,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "TIE",
+    "profit": 0,
+    "amount": 10
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-03-29T10:27:27.371Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 80,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.101786413576809,
+      "middle": 1.100779131567681,
+      "lower": 1.099771849558553,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-03-29T10:29:57.433Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 37,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.100020878202775,
+      "middle": 1.0994877930890234,
+      "lower": 1.098954707975272,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-03-29T10:30:58.454Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "NEUTRAL",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 81,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.148688544669219,
+      "middle": 1.1485569999999998,
+      "lower": 1.1484254553307807,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "TIE",
+    "profit": 0,
+    "amount": 10
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-03-29T10:31:27.489Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 66,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1009915628664657,
+      "middle": 1.100384014015061,
+      "lower": 1.0997764651636561,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-03-29T10:33:27.593Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "LOW",
+      "momentum": "STRONG_BULLISH",
+      "overall": "SIDEWAYS"
+    },
+    "rsi": {
+      "value": 64,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1010958595340463,
+      "middle": 1.1003706377157487,
+      "lower": 1.0996454158974511,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -11,
+    "amount": 11
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-03-29T10:34:27.995Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 32,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.0999726615351157,
+      "middle": 1.0994371802935803,
+      "lower": 1.0989016990520448,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -10,
+    "amount": 10
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-03-29T10:36:28.077Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BEARISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 54,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1008766425210526,
+      "middle": 1.1003272487752764,
+      "lower": 1.0997778550295003,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 8.5,
+    "amount": 10
+  },
+  {
+    "id": 12,
+    "timestamp": "2026-03-29T10:37:58.510Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 45,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1002030583352513,
+      "middle": 1.099932453023647,
+      "lower": 1.0996618477120426,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "WIN",
+    "profit": 9.35,
+    "amount": 11
+  },
+  {
+    "id": 13,
+    "timestamp": "2026-03-29T10:38:58.932Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 24,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.0996791207067314,
+      "middle": 1.0991802800887338,
+      "lower": 1.0986814394707363,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.7,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": true,
+      "bbBreach": false,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -11,
+    "amount": 11
+  },
+  {
+    "id": 14,
+    "timestamp": "2026-03-29T10:40:28.988Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 42,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.0998197136298813,
+      "middle": 1.0995536331983353,
+      "lower": 1.0992875527667894,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 2.3,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "BUY",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": false,
+      "engulfing": true,
+      "conditionCount": 1
+    },
+    "result": "LOSS",
+    "profit": -11,
+    "amount": 11
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-03-29T10:40:30.061Z",
+    "pair": "EURUSD-OTC",
+    "marketCondition": {
+      "trend": "STRONG_DOWN",
+      "volatility": "NORMAL",
+      "momentum": "STRONG_BULLISH",
+      "overall": "TRENDING"
+    },
+    "rsi": {
+      "value": 37,
+      "signal": "NEUTRAL"
+    },
+    "bb": {
+      "upper": 1.1457250620294492,
+      "middle": 1.1456545,
+      "lower": 1.1455839379705508,
+      "price": 0,
+      "position": "NORMAL"
+    },
+    "score": {
+      "total": 3.2,
+      "signalStrength": "low",
+      "shouldTrade": false
+    },
+    "signal": "SELL",
+    "conditions": {
+      "rsiExtreme": false,
+      "bbBreach": true,
+      "engulfing": false,
+      "conditionCount": 1
+    },
+    "result": "TIE",
+    "profit": 0,
+    "amount": 10
+  }
+]

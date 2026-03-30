@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-03-29T06:33:29.430Z",
+  "config": {
+    "totalAttempts": 500,
+    "strategy": "EDGE"
+  },
+  "overall": {
+    "totalTrades": 398,
+    "winrate": 58.5427135678392,
+    "profitFactor": 1.3003456140115741,
+    "totalProfit": 1441.0582560275325,
+    "maxDrawdown": 30.240751083086092,
+    "avgTradesPer100": 79.6
+  },
+  "periods": {
+    "first100": {
+      "trades": 100,
+      "wins": 54,
+      "losses": 46,
+      "winrate": 54,
+      "profitFactor": 0.9391381058560031,
+      "maxDrawdown": 114.26977087375647,
+      "totalProfit": -33.900075038206296
+    },
+    "middle100": {
+      "trades": 100,
+      "wins": 60,
+      "losses": 40,
+      "winrate": 60,
+      "profitFactor": 1.1774585138881384,
+      "maxDrawdown": 217.63822268813098,
+      "totalProfit": 151.72702937435827
+    },
+    "last100": {
+      "trades": 198,
+      "wins": 119,
+      "losses": 79,
+      "winrate": 60.1010101010101,
+      "profitFactor": 1.3907948321592978,
+      "maxDrawdown": 302.40751083086093,
+      "totalProfit": 1323.2313016913822
+    }
+  },
+  "overfitting": {
+    "risk": false,
+    "winrateDiff": 6.101010101010097,
+    "pfDiff": 0.4516567263032947
+  },
+  "targets": {
+    "winrate": {
+      "target": 58,
+      "actual": 58.5427135678392,
+      "passed": true
+    },
+    "profitFactor": {
+      "target": 1.3,
+      "actual": 1.3003456140115741,
+      "passed": true
+    },
+    "drawdown": {
+      "target": 5,
+      "actual": 30.240751083086092,
+      "passed": false
+    },
+    "minTrades": {
+      "target": 80,
+      "actual": 398,
+      "passed": true
+    }
+  },
+  "allPassed": false
+}

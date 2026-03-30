@@ -1,0 +1,195 @@
+{
+  "totalTrades": 7,
+  "winCount": 0,
+  "lossCount": 7,
+  "winRate": "0.00",
+  "totalProfit": "0.00",
+  "totalLoss": "40.00",
+  "profitFactor": "0.00",
+  "netProfit": "-40.00",
+  "avgProfitPerTrade": "-5.71",
+  "byMarketTrend": [
+    {
+      "condition": "STRONG_DOWN",
+      "trades": 7,
+      "wins": 0,
+      "losses": 7,
+      "winRate": "0.0",
+      "profit": "-40.00",
+      "avgProfit": "-5.71"
+    }
+  ],
+  "byMarketOverall": [
+    {
+      "condition": "SIDEWAYS",
+      "trades": 2,
+      "wins": 0,
+      "losses": 2,
+      "winRate": "0.0",
+      "profit": "-14.00",
+      "avgProfit": "-7.00"
+    },
+    {
+      "condition": "TRENDING",
+      "trades": 5,
+      "wins": 0,
+      "losses": 5,
+      "winRate": "0.0",
+      "profit": "-26.00",
+      "avgProfit": "-5.20"
+    }
+  ],
+  "byVolatility": [
+    {
+      "condition": "LOW",
+      "trades": 2,
+      "wins": 0,
+      "losses": 2,
+      "winRate": "0.0",
+      "profit": "-14.00",
+      "avgProfit": "-7.00"
+    },
+    {
+      "condition": "NORMAL",
+      "trades": 5,
+      "wins": 0,
+      "losses": 5,
+      "winRate": "0.0",
+      "profit": "-26.00",
+      "avgProfit": "-5.20"
+    }
+  ],
+  "bySignal": [
+    {
+      "condition": "SELL",
+      "trades": 4,
+      "wins": 0,
+      "losses": 4,
+      "winRate": "0.0",
+      "profit": "-19.00",
+      "avgProfit": "-4.75"
+    },
+    {
+      "condition": "BUY",
+      "trades": 3,
+      "wins": 0,
+      "losses": 3,
+      "winRate": "0.0",
+      "profit": "-21.00",
+      "avgProfit": "-7.00"
+    }
+  ],
+  "byRSIExtreme": [
+    {
+      "condition": "YES",
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": "0.0",
+      "profit": "-10.00",
+      "avgProfit": "-10.00"
+    },
+    {
+      "condition": "NO",
+      "trades": 6,
+      "wins": 0,
+      "losses": 6,
+      "winRate": "0.0",
+      "profit": "-30.00",
+      "avgProfit": "-5.00"
+    }
+  ],
+  "byBBBreach": [
+    {
+      "condition": "YES",
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": "0.0",
+      "profit": "-4.00",
+      "avgProfit": "-4.00"
+    },
+    {
+      "condition": "NO",
+      "trades": 6,
+      "wins": 0,
+      "losses": 6,
+      "winRate": "0.0",
+      "profit": "-36.00",
+      "avgProfit": "-6.00"
+    }
+  ],
+  "byEngulfing": [
+    {
+      "condition": "YES",
+      "trades": 6,
+      "wins": 0,
+      "losses": 6,
+      "winRate": "0.0",
+      "profit": "-36.00",
+      "avgProfit": "-6.00"
+    },
+    {
+      "condition": "NO",
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": "0.0",
+      "profit": "-4.00",
+      "avgProfit": "-4.00"
+    }
+  ],
+  "byConditionCount": [
+    {
+      "condition": "2",
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": "0.0",
+      "profit": "-10.00",
+      "avgProfit": "-10.00"
+    },
+    {
+      "condition": "1",
+      "trades": 6,
+      "wins": 0,
+      "losses": 6,
+      "winRate": "0.0",
+      "profit": "-30.00",
+      "avgProfit": "-5.00"
+    }
+  ],
+  "byScoreStrength": [
+    {
+      "condition": "medium",
+      "trades": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": "0.0",
+      "profit": "-10.00",
+      "avgProfit": "-10.00"
+    },
+    {
+      "condition": "low",
+      "trades": 6,
+      "wins": 0,
+      "losses": 6,
+      "winRate": "0.0",
+      "profit": "-30.00",
+      "avgProfit": "-5.00"
+    }
+  ],
+  "bestSetup": [
+    {
+      "signal": "SELL",
+      "conditions": 1,
+      "market": "TRENDING",
+      "scoreStrength": "low",
+      "tradeCount": 3,
+      "wins": 0,
+      "winRate": "0.0",
+      "totalProfit": "-15.00",
+      "avgProfit": "-5.00"
+    }
+  ]
+}

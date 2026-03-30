@@ -1,0 +1,26 @@
+❌ WebSocket Error: connect ETIMEDOUT 45.88.36.129:443
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ETIMEDOUT 45.88.36.129:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1645:16)
+Emitted 'error' event on IQOptionClient instance at:
+    at WebSocket.<anonymous> (D:\เขียนโค้ด\iq-option-Pro\src\api\iqOptionClient.js:63:26)
+    at WebSocket.emit (node:events:508:28)
+    at emitErrorAndClose (D:\เขียนโค้ด\iq-option-Pro\node_modules\ws\lib\websocket.js:1046:13)
+    at ClientRequest.<anonymous> (D:\เขียนโค้ด\iq-option-Pro\node_modules\ws\lib\websocket.js:886:5)
+    at ClientRequest.emit (node:events:508:28)
+    at emitErrorEvent (node:_http_client:108:11)
+    at TLSSocket.socketErrorListener (node:_http_client:575:5)
+    at TLSSocket.emit (node:events:508:28)
+    at emitErrorNT (node:internal/streams/destroy:170:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:129:3) {
+  errno: -4039,
+  code: 'ETIMEDOUT',
+  syscall: 'connect',
+  address: '45.88.36.129',
+  port: 443
+}
+
+Node.js v24.14.1

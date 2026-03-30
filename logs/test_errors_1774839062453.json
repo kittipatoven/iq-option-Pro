@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-03-30T02:51:02.444Z",
+  "context": "Test Runner",
+  "message": "Authentication failed - profile is false",
+  "stack": "Error: Authentication failed - profile is false\n    at IQOptionClient.onProfileReceived (D:\\เขียนโค้ด\\iq-option-Pro\\src\\api\\iqOptionClient.js:1309:28)\n    at Object.onceWrapper (node:events:623:26)\n    at IQOptionClient.emit (node:events:508:28)\n    at IQOptionClient.handleMessage (D:\\เขียนโค้ด\\iq-option-Pro\\src\\api\\iqOptionClient.js:1099:26)\n    at WebSocket.<anonymous> (D:\\เขียนโค้ด\\iq-option-Pro\\src\\api\\iqOptionClient.js:598:18)\n    at WebSocket.emit (node:events:508:28)\n    at Receiver.receiverOnMessage (D:\\เขียนโค้ด\\iq-option-Pro\\node_modules\\ws\\lib\\websocket.js:1225:20)\n    at Receiver.emit (node:events:508:28)\n    at Receiver.dataMessage (D:\\เขียนโค้ด\\iq-option-Pro\\node_modules\\ws\\lib\\receiver.js:596:14)\n    at D:\\เขียนโค้ด\\iq-option-Pro\\node_modules\\ws\\lib\\receiver.js:530:12"
+}

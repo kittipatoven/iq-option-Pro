@@ -1,0 +1,4 @@
+Fatal error: Error: Login timeout
+    at Timeout._onTimeout (D:\เขียนโค้ด\iq-option-Pro\src\api\iqOptionClient.js:177:24)
+    at listOnTimeout (node:internal/timers:605:17)
+    at process.processTimers (node:internal/timers:541:7)

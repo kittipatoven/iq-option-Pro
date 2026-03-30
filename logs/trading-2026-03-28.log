@@ -1,0 +1,1281 @@
+{"timestamp":"2026-03-28T02:27:47.405Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T02:27:47.708Z","level":"INFO","message":"=== Testing AI News Analyzer ===\n","data":null}
+{"timestamp":"2026-03-28T02:27:47.712Z","level":"INFO","message":"Test 1: Sentiment Analysis","data":null}
+{"timestamp":"2026-03-28T02:27:47.717Z","level":"INFO","message":"✓ \"US economy shows strong growth and bulli...\" → positive (expected: positive)","data":null}
+{"timestamp":"2026-03-28T02:27:47.722Z","level":"INFO","message":"✓ \"Market crash and recession fears decline...\" → negative (expected: negative)","data":null}
+{"timestamp":"2026-03-28T02:27:47.726Z","level":"INFO","message":"✓ \"Normal trading session with no major cha...\" → neutral (expected: neutral)","data":null}
+{"timestamp":"2026-03-28T02:27:47.728Z","level":"INFO","message":"","data":null}
+{"timestamp":"2026-03-28T02:27:47.729Z","level":"INFO","message":"Test 2: Currency Detection","data":null}
+{"timestamp":"2026-03-28T02:27:47.730Z","level":"INFO","message":"✓ \"USD dollar gains against EUR...\" → [USD, EUR] (expected: [USD, EUR])","data":null}
+{"timestamp":"2026-03-28T02:27:47.732Z","level":"INFO","message":"✓ \"Bank of England raises rates for GBP...\" → [GBP] (expected: [GBP])","data":null}
+{"timestamp":"2026-03-28T02:27:47.733Z","level":"INFO","message":"✓ \"JPY yen weakens in Tokyo trading...\" → [JPY] (expected: [JPY])","data":null}
+{"timestamp":"2026-03-28T02:27:47.734Z","level":"INFO","message":"","data":null}
+{"timestamp":"2026-03-28T02:27:47.735Z","level":"INFO","message":"Test 3: Impact Calculation","data":null}
+{"timestamp":"2026-03-28T02:27:47.736Z","level":"INFO","message":"✓ \"Federal Reserve interest rate decision...\" → HIGH (expected: HIGH)","data":null}
+{"timestamp":"2026-03-28T02:27:47.737Z","level":"INFO","message":"✓ \"CPI inflation data released...\" → HIGH (expected: HIGH)","data":null}
+{"timestamp":"2026-03-28T02:27:47.738Z","level":"INFO","message":"✗ \"GDP growth figures announced...\" → HIGH (expected: MEDIUM)","data":null}
+{"timestamp":"2026-03-28T02:27:47.739Z","level":"INFO","message":"✓ \"Retail sales slightly up...\" → MEDIUM (expected: MEDIUM)","data":null}
+{"timestamp":"2026-03-28T02:27:47.740Z","level":"INFO","message":"✓ \"Normal market activity...\" → LOW (expected: LOW)","data":null}
+{"timestamp":"2026-03-28T02:27:47.741Z","level":"INFO","message":"","data":null}
+{"timestamp":"2026-03-28T02:27:47.742Z","level":"INFO","message":"Test 4: Full News Analysis","data":null}
+{"timestamp":"2026-03-28T02:27:47.743Z","level":"INFO","message":"Analyzed news:","data":{"title":"Federal Reserve announces interest rate hike amid ","sentiment":"positive","currencies":["USD"],"impact":"HIGH"}}
+{"timestamp":"2026-03-28T02:27:47.744Z","level":"INFO","message":"✓ Full analysis works\n","data":null}
+{"timestamp":"2026-03-28T02:27:47.745Z","level":"INFO","message":"Test 5: News Filter with RSS","data":null}
+{"timestamp":"2026-03-28T02:27:47.747Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T02:27:47.750Z","level":"INFO","message":"EURUSD with USD HIGH news: ALLOW","data":null}
+{"timestamp":"2026-03-28T02:27:47.751Z","level":"INFO","message":"GBPJPY with USD HIGH news: ALLOW","data":null}
+{"timestamp":"2026-03-28T02:27:47.752Z","level":"INFO","message":"✓ News filter integration works\n","data":null}
+{"timestamp":"2026-03-28T02:27:47.752Z","level":"INFO","message":"Test 6: RSS Fetch (optional)","data":null}
+{"timestamp":"2026-03-28T02:27:52.437Z","level":"INFO","message":"RSS fetch completed","data":{"sources":4,"totalItems":40}}
+{"timestamp":"2026-03-28T02:27:52.451Z","level":"INFO","message":"✓ RSS fetch successful: 40 items","data":null}
+{"timestamp":"2026-03-28T02:27:52.453Z","level":"INFO","message":"  Item 1: Factbox-How many people have been killed...","data":null}
+{"timestamp":"2026-03-28T02:27:52.454Z","level":"INFO","message":"    → Sentiment: neutral, Currencies: [], Impact: LOW","data":null}
+{"timestamp":"2026-03-28T02:27:52.455Z","level":"INFO","message":"  Item 2: China detaining Panama-flagged ships ami...","data":null}
+{"timestamp":"2026-03-28T02:27:52.456Z","level":"INFO","message":"    → Sentiment: neutral, Currencies: [], Impact: LOW","data":null}
+{"timestamp":"2026-03-28T02:27:52.457Z","level":"INFO","message":"  Item 3: Meta’s longtime content policy chief Bic...","data":null}
+{"timestamp":"2026-03-28T02:27:52.458Z","level":"INFO","message":"    → Sentiment: neutral, Currencies: [], Impact: LOW","data":null}
+{"timestamp":"2026-03-28T02:27:52.458Z","level":"INFO","message":"","data":null}
+{"timestamp":"2026-03-28T02:27:52.459Z","level":"INFO","message":"=== All Tests Completed ===","data":null}
+{"timestamp":"2026-03-28T02:28:04.154Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T02:28:04.165Z","level":"INFO","message":"=== Testing Offline News Filter ===\n","data":null}
+{"timestamp":"2026-03-28T02:28:04.166Z","level":"INFO","message":"Test 1: Initialize News Filter","data":null}
+{"timestamp":"2026-03-28T02:28:04.168Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T02:28:04.171Z","level":"INFO","message":"✓ Initialization successful\n","data":null}
+{"timestamp":"2026-03-28T02:28:04.172Z","level":"INFO","message":"Test 2: Get Status","data":null}
+{"timestamp":"2026-03-28T02:28:04.174Z","level":"INFO","message":"Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"02:30","currency":"AUD","name":"Australia GDP","minutesAway":2}}}
+{"timestamp":"2026-03-28T02:28:04.175Z","level":"INFO","message":"✓ Status retrieved\n","data":null}
+{"timestamp":"2026-03-28T02:28:04.176Z","level":"INFO","message":"Test 3: Get Pair Currencies","data":null}
+{"timestamp":"2026-03-28T02:28:04.178Z","level":"INFO","message":"EURUSD → [\"EUR\",\"USD\"]","data":null}
+{"timestamp":"2026-03-28T02:28:04.179Z","level":"INFO","message":"GBPUSD → [\"GBP\",\"USD\"]","data":null}
+{"timestamp":"2026-03-28T02:28:04.180Z","level":"INFO","message":"USDJPY → [\"USD\",\"JPY\"]","data":null}
+{"timestamp":"2026-03-28T02:28:04.181Z","level":"INFO","message":"AUDUSD → [\"AUD\",\"USD\"]","data":null}
+{"timestamp":"2026-03-28T02:28:04.182Z","level":"INFO","message":"✓ Currency mapping works\n","data":null}
+{"timestamp":"2026-03-28T02:28:04.183Z","level":"INFO","message":"Test 4: Is News Time","data":null}
+{"timestamp":"2026-03-28T02:28:04.184Z","level":"INFO","message":"Is news time: true","data":null}
+{"timestamp":"2026-03-28T02:28:04.185Z","level":"INFO","message":"✓ News time check works\n","data":null}
+{"timestamp":"2026-03-28T02:28:04.186Z","level":"INFO","message":"Test 5: Should Stop Trading","data":null}
+{"timestamp":"2026-03-28T02:28:04.188Z","level":"INFO","message":"EURUSD: ALLOW - No blocking news","data":null}
+{"timestamp":"2026-03-28T02:28:04.189Z","level":"INFO","message":"GBPUSD: ALLOW - No blocking news","data":null}
+{"timestamp":"2026-03-28T02:28:04.189Z","level":"INFO","message":"USDJPY: ALLOW - No blocking news","data":null}
+{"timestamp":"2026-03-28T02:28:04.191Z","level":"INFO","message":"Trading blocked by news","data":{"pair":"AUDUSD","currency":"AUD","time":"02:30","name":"Australia GDP","minutesAway":2}}
+{"timestamp":"2026-03-28T02:28:04.192Z","level":"INFO","message":"AUDUSD: STOP - High-impact AUD news: Australia GDP at 02:30","data":null}
+{"timestamp":"2026-03-28T02:28:04.193Z","level":"INFO","message":"USDCAD: ALLOW - No blocking news","data":null}
+{"timestamp":"2026-03-28T02:28:04.194Z","level":"INFO","message":"✓ Trading stop check works\n","data":null}
+{"timestamp":"2026-03-28T02:28:04.195Z","level":"INFO","message":"Test 6: Get Upcoming News","data":null}
+{"timestamp":"2026-03-28T02:28:04.197Z","level":"INFO","message":"Found 38 upcoming high-impact news events","data":null}
+{"timestamp":"2026-03-28T02:28:04.198Z","level":"INFO","message":"  - 02:30 AUD: Australia GDP (2 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.200Z","level":"INFO","message":"  - 06:00 EUR: ECB Interest Rate (212 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.201Z","level":"INFO","message":"  - 07:00 GBP: Bank of England Rate (272 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.202Z","level":"INFO","message":"  - 07:00 GBP: UK CPI (272 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.203Z","level":"INFO","message":"  - 07:00 GBP: UK GDP (272 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.204Z","level":"INFO","message":"✓ Upcoming news retrieval works\n","data":null}
+{"timestamp":"2026-03-28T02:28:04.205Z","level":"INFO","message":"Test 7: Get Upcoming News for EURUSD","data":null}
+{"timestamp":"2026-03-28T02:28:04.206Z","level":"INFO","message":"Found 16 upcoming events affecting EURUSD","data":null}
+{"timestamp":"2026-03-28T02:28:04.207Z","level":"INFO","message":"  - 06:00 EUR: ECB Interest Rate (212 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.208Z","level":"INFO","message":"  - 09:00 EUR: EU CPI (392 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.209Z","level":"INFO","message":"  - 09:00 EUR: EU GDP (392 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.210Z","level":"INFO","message":"  - 10:00 EUR: ECB Press Conference (452 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.211Z","level":"INFO","message":"  - 10:00 EUR: German ZEW Economic Sentiment (452 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.212Z","level":"INFO","message":"  - 10:00 EUR: EU Consumer Confidence (452 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.213Z","level":"INFO","message":"  - 13:30 USD: Non-Farm Payrolls (662 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.214Z","level":"INFO","message":"  - 13:30 USD: CPI (662 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.215Z","level":"INFO","message":"  - 13:30 USD: GDP (662 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.216Z","level":"INFO","message":"  - 13:30 USD: Initial Jobless Claims (662 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.217Z","level":"INFO","message":"  - 15:00 USD: ISM Manufacturing (752 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.218Z","level":"INFO","message":"  - 15:00 USD: ISM Services (752 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.219Z","level":"INFO","message":"  - 15:00 USD: Consumer Confidence (752 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.220Z","level":"INFO","message":"  - 18:00 USD: FOMC Statement (932 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.221Z","level":"INFO","message":"  - 18:00 USD: Fed Interest Rate Decision (932 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.222Z","level":"INFO","message":"  - 19:00 USD: FOMC Press Conference (992 min)","data":null}
+{"timestamp":"2026-03-28T02:28:04.223Z","level":"INFO","message":"✓ Pair-specific news works\n","data":null}
+{"timestamp":"2026-03-28T02:28:04.224Z","level":"INFO","message":"=== All Tests Passed ===","data":null}
+{"timestamp":"2026-03-28T02:54:47.177Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:54:47.590Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T02:54:47.592Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:54:47.593Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T02:54:47.596Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T02:54:47.598Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T02:54:47.603Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":185}}}
+{"timestamp":"2026-03-28T02:54:47.605Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T02:54:47.606Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T02:55:31.058Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:55:31.083Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T02:55:31.086Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:55:31.088Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T02:55:31.091Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T02:55:31.093Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T02:55:31.096Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":184}}}
+{"timestamp":"2026-03-28T02:55:31.097Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T02:55:31.099Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T02:55:31.100Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T02:55:31.251Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T02:56:22.667Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:56:22.688Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T02:56:22.692Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:56:22.693Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T02:56:22.697Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T02:56:22.698Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T02:56:22.701Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":184}}}
+{"timestamp":"2026-03-28T02:56:22.703Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T02:56:22.704Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T02:56:22.704Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T02:56:22.858Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T02:57:29.638Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:57:29.646Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T02:57:29.647Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:57:29.649Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T02:57:29.654Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T02:57:29.656Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T02:57:29.659Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":183}}}
+{"timestamp":"2026-03-28T02:57:29.661Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T02:57:29.662Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T02:57:29.663Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T02:57:29.928Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T02:57:29.929Z","level":"ERROR","message":"Bot initialization failed","data":{}}
+{"timestamp":"2026-03-28T02:57:29.933Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T02:58:36.310Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:58:36.330Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T02:58:36.331Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:58:36.332Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T02:58:36.338Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T02:58:36.343Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T02:58:36.352Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":181}}}
+{"timestamp":"2026-03-28T02:58:36.355Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T02:58:36.357Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T02:58:36.358Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T02:58:36.496Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T02:58:36.501Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T02:58:36.502Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T02:58:36.503Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T02:58:36.505Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T02:58:40.738Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T02:58:40.753Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T02:58:45.695Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T02:58:45.699Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T02:58:45.701Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T02:58:45.703Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T02:58:45.704Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T02:58:45.705Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T02:58:45.706Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T02:58:45.707Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T02:58:45.709Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T02:58:45.711Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T02:58:45.711Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T02:58:45.713Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T02:58:45.714Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T02:58:45.715Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T02:58:45.716Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:58:45.717Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T02:58:45.718Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:58:45.719Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T02:58:45.720Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T02:58:45.721Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T02:58:45.722Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T02:58:45.723Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T02:58:45.724Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:05:04.039Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:05:04.042Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:05:04.043Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:05:04.044Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:05:04.048Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:05:04.050Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:05:04.051Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":175}}}
+{"timestamp":"2026-03-28T03:05:04.053Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:05:04.054Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:05:04.055Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:05:04.257Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:05:04.258Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:05:04.260Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:05:04.260Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:05:04.262Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:05:08.274Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:05:08.289Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:05:13.061Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:05:13.065Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:05:13.067Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:05:13.069Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:05:13.070Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:05:13.072Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:05:13.073Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:05:13.074Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:05:13.075Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:05:13.076Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:05:13.077Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:05:13.078Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:05:13.080Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:05:13.080Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:05:13.081Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:05:13.082Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:05:13.083Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:05:13.084Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:05:13.086Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:05:13.087Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:05:13.088Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:05:13.089Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:05:13.090Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:06:24.159Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:06:24.175Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:06:24.180Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:06:24.181Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:06:24.189Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:06:24.192Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:06:24.195Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":174}}}
+{"timestamp":"2026-03-28T03:06:24.197Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:06:24.198Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:06:24.200Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:06:24.340Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:06:24.345Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:06:24.346Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:06:24.347Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:06:24.349Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:06:28.205Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:06:28.220Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:06:32.630Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:06:32.645Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:06:32.649Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:06:32.651Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:06:32.652Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:06:32.653Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:06:32.654Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:06:32.655Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:06:32.656Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:06:32.657Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:06:32.658Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:06:32.659Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:06:32.661Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:06:32.662Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:06:32.663Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:06:32.664Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:06:32.665Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:06:32.666Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:06:32.667Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:06:32.667Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:06:32.668Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:06:32.669Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:06:32.670Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:14:27.690Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:14:27.705Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:14:27.706Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:14:27.707Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:14:27.710Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:14:27.712Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:14:27.714Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":166}}}
+{"timestamp":"2026-03-28T03:14:27.716Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:14:27.717Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:14:27.717Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:14:27.917Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:14:27.919Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:14:27.920Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:14:27.921Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:14:27.922Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:14:31.814Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:14:31.826Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:14:36.453Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:14:36.454Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:14:36.456Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:14:36.458Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:14:36.459Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:14:36.460Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:14:36.461Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:14:36.463Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:14:36.464Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:14:36.465Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:14:36.466Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:14:36.467Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:14:36.469Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:14:36.469Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:14:36.470Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:14:36.471Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:14:36.472Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:14:36.473Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:14:36.474Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:14:36.475Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:14:36.475Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:14:36.476Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:14:36.477Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:19:06.806Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:06.809Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:19:06.810Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:06.811Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:19:06.815Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:19:06.816Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:19:06.818Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":161}}}
+{"timestamp":"2026-03-28T03:19:06.820Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:19:06.821Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:19:06.822Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:19:07.036Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:19:07.037Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:19:07.039Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:19:07.040Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:19:07.041Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:19:10.894Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:19:10.906Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:19:15.634Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:19:15.636Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:19:15.638Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:19:15.639Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:19:15.641Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:19:15.642Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:19:15.643Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:19:15.644Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:19:15.645Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:19:15.646Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:19:15.647Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:19:15.648Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:19:15.650Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:19:15.651Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:19:15.652Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:15.653Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:19:15.654Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:15.654Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:19:15.655Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:19:15.657Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:19:15.657Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:19:15.658Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:15.659Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:19:45.219Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:45.235Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:19:45.242Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:45.243Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:19:45.247Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:19:45.249Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:19:45.251Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":160}}}
+{"timestamp":"2026-03-28T03:19:45.252Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:19:45.253Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:19:45.254Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:19:45.393Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:19:45.398Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:19:45.400Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:19:45.401Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:19:45.402Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:19:49.194Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:19:49.210Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:19:53.583Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:19:53.596Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:19:53.597Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:19:53.599Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:19:53.601Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:19:53.602Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:19:53.603Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:19:53.604Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:19:53.606Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:19:53.607Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:19:53.608Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:19:53.609Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:19:53.610Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:19:53.611Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:19:53.612Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:53.613Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:19:53.614Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:53.615Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:19:53.616Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:19:53.617Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:19:53.618Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:19:53.619Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:19:53.620Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:23:27.942Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:23:28.325Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:23:28.327Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:23:28.328Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:23:28.331Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:23:28.334Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:23:28.338Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":157}}}
+{"timestamp":"2026-03-28T03:23:28.346Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:23:28.350Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:23:28.352Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:23:28.378Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T03:25:19.559Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:25:19.571Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:25:19.582Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:25:19.583Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:25:19.587Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:25:19.588Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:25:19.590Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":155}}}
+{"timestamp":"2026-03-28T03:25:19.592Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:25:19.593Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:25:19.594Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:25:19.598Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T03:28:18.313Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:28:18.329Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:28:18.332Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:28:18.334Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:28:18.337Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:28:18.339Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:28:18.341Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":152}}}
+{"timestamp":"2026-03-28T03:28:18.342Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:28:18.343Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:28:18.344Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:28:18.536Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:28:18.537Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:28:18.539Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:28:18.540Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:28:18.542Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:28:22.420Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:28:22.435Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:28:26.937Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:28:26.945Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:28:26.958Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:28:26.961Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:28:26.963Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:28:26.964Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:28:26.965Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:28:26.966Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:28:26.967Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:28:26.968Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:28:26.969Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:28:26.971Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:28:26.972Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:28:26.973Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:28:26.974Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:28:26.975Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:28:26.976Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:28:26.977Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:28:26.978Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:28:26.979Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:28:26.980Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:28:26.981Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:28:26.983Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:31:51.401Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:31:51.787Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:31:51.789Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:31:51.791Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:31:51.794Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:31:51.796Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:31:51.798Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":148}}}
+{"timestamp":"2026-03-28T03:31:51.799Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:31:51.801Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:31:51.801Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:31:51.806Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T03:36:33.745Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:36:33.749Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:36:33.750Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:36:33.751Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:36:33.755Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:36:33.757Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:36:33.758Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":143}}}
+{"timestamp":"2026-03-28T03:36:33.760Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:36:33.761Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:36:33.762Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:36:33.989Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:36:33.990Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:36:33.991Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:36:33.992Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:36:33.994Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:36:37.856Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:36:37.865Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:36:42.159Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:36:42.164Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:36:42.169Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:36:42.174Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:36:42.177Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:36:42.179Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:36:42.180Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:36:42.181Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:36:42.183Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:36:42.184Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:36:42.186Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:36:42.187Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:36:42.189Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:36:42.190Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:36:42.191Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:36:42.192Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:36:42.192Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:36:42.193Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:36:42.194Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:36:42.196Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:36:42.197Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:36:42.198Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:36:42.199Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:39:00.809Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:39:01.197Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:39:01.198Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:39:01.199Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:39:01.203Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:39:01.204Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:39:01.206Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":141}}}
+{"timestamp":"2026-03-28T03:39:01.207Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:39:01.208Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:39:01.210Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:39:01.369Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:39:01.370Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:39:01.372Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:39:01.373Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:39:01.374Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:39:06.309Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:39:06.324Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:39:11.645Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:39:11.647Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:39:11.648Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:39:11.650Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:39:11.651Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:39:11.653Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:39:11.654Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:39:11.655Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:39:11.656Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:39:11.657Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:39:11.658Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:39:11.660Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:39:11.661Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:39:11.662Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:39:11.663Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:39:11.664Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:39:11.665Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:39:11.666Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:39:11.667Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:39:11.668Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:39:11.669Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:39:11.670Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:39:11.671Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:40:43.133Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:40:43.517Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:40:43.518Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:40:43.519Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:40:43.523Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:40:43.525Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:40:43.527Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":139}}}
+{"timestamp":"2026-03-28T03:40:43.528Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:40:43.529Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:40:43.530Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:40:43.676Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:40:43.678Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:40:43.679Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:40:43.680Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:40:43.681Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:40:47.440Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:40:47.454Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:40:51.426Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:40:51.427Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:40:51.429Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:40:51.430Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:40:51.432Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:40:51.433Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:40:51.434Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:40:51.435Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:40:51.436Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T03:40:51.438Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T03:40:51.439Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T03:40:51.440Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T03:40:51.441Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T03:40:51.442Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T03:40:51.443Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:40:51.444Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T03:40:51.445Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:40:51.446Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T03:40:51.447Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T03:40:51.448Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T03:40:51.449Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T03:40:51.450Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:40:51.451Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T03:50:36.473Z","level":"INFO","message":"\n========================================","data":null}
+{"timestamp":"2026-03-28T03:50:36.492Z","level":"INFO","message":"  Shutting down gracefully...","data":null}
+{"timestamp":"2026-03-28T03:50:36.500Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:51:33.299Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:51:33.302Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:51:33.302Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:51:33.304Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:51:33.308Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:51:33.309Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:51:33.311Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":128}}}
+{"timestamp":"2026-03-28T03:51:33.312Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:51:33.314Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:51:33.314Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:51:33.496Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:51:33.497Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:51:33.499Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:51:33.500Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:51:33.501Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:51:35.439Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:51:35.448Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:51:39.769Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:51:39.771Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:51:39.772Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:51:39.774Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:51:39.776Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:51:39.777Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:51:39.778Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:51:39.779Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:51:39.782Z","level":"ERROR","message":"Bot initialization failed","data":{}}
+{"timestamp":"2026-03-28T03:51:39.785Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T03:55:02.682Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:55:02.696Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:55:02.697Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:55:02.699Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:55:02.704Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:55:02.706Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:55:02.709Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":125}}}
+{"timestamp":"2026-03-28T03:55:02.711Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:55:02.714Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:55:02.715Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:55:02.955Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:55:02.971Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:55:02.980Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:55:02.982Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:55:02.984Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:55:05.179Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:55:05.191Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:55:11.618Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:55:11.630Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:55:11.638Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:55:11.640Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:55:11.641Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:55:11.642Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:55:11.643Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:55:11.644Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:55:11.646Z","level":"ERROR","message":"Bot initialization failed","data":{}}
+{"timestamp":"2026-03-28T03:55:11.648Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T03:56:08.572Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:56:08.587Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:56:08.591Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:56:08.592Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:56:08.596Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:56:08.598Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:56:08.600Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":124}}}
+{"timestamp":"2026-03-28T03:56:08.602Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:56:08.603Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:56:08.604Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:56:08.752Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:56:08.757Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:56:08.758Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:56:08.760Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:56:08.761Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:56:10.621Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:56:10.626Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:56:15.264Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:56:15.277Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:56:15.279Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:56:15.282Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:56:15.284Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:56:15.285Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:56:15.286Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:56:15.287Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:56:15.289Z","level":"ERROR","message":"Bot initialization failed","data":{}}
+{"timestamp":"2026-03-28T03:56:15.290Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T03:58:24.950Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:58:24.955Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T03:58:24.957Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T03:58:24.958Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T03:58:24.961Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T03:58:24.963Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:58:24.965Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":122}}}
+{"timestamp":"2026-03-28T03:58:24.967Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T03:58:24.968Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T03:58:24.969Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:58:25.118Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T03:58:25.122Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T03:58:25.124Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T03:58:25.125Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T03:58:25.126Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T03:58:26.936Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T03:58:26.951Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T03:58:31.455Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T03:58:31.466Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T03:58:31.474Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T03:58:31.477Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T03:58:31.479Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T03:58:31.481Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T03:58:31.482Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T03:58:31.483Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T03:58:31.485Z","level":"ERROR","message":"Bot initialization failed","data":{}}
+{"timestamp":"2026-03-28T03:58:31.487Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T04:04:34.889Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:04:34.903Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T04:04:34.904Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:04:34.905Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T04:04:34.908Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T04:04:34.913Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T04:04:34.915Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":115}}}
+{"timestamp":"2026-03-28T04:04:34.917Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T04:04:34.919Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T04:04:34.921Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T04:04:35.089Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T04:04:35.095Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T04:04:35.099Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T04:04:35.102Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T04:04:35.105Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T04:04:37.000Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T04:04:37.011Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T04:04:41.514Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T04:04:41.529Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T04:04:41.533Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T04:04:41.535Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T04:04:41.536Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T04:04:41.537Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T04:04:41.538Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T04:04:41.540Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T04:04:41.551Z","level":"ERROR","message":"Bot initialization failed","data":{}}
+{"timestamp":"2026-03-28T04:04:41.553Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T04:12:11.532Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:12:11.537Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T04:12:11.539Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:12:11.540Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T04:12:11.543Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T04:12:11.545Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T04:12:11.547Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":108}}}
+{"timestamp":"2026-03-28T04:12:11.549Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T04:12:11.550Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T04:12:11.551Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T04:12:11.561Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T04:16:28.575Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:16:28.578Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T04:16:28.579Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:16:28.580Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T04:16:28.583Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T04:16:28.585Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T04:16:28.587Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":104}}}
+{"timestamp":"2026-03-28T04:16:28.589Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T04:16:28.590Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T04:16:28.591Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T04:16:28.597Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T04:17:00.924Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:17:00.936Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T04:17:00.947Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:17:00.948Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T04:17:00.952Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T04:17:00.954Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T04:17:00.956Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":103}}}
+{"timestamp":"2026-03-28T04:17:00.957Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T04:17:00.958Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T04:17:00.959Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T04:17:00.964Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T04:24:23.137Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:24:23.142Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T04:24:23.143Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:24:23.144Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T04:24:23.148Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T04:24:23.149Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T04:24:23.151Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":96}}}
+{"timestamp":"2026-03-28T04:24:23.152Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T04:24:23.153Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T04:24:23.154Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T04:24:23.323Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T04:24:23.325Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T04:24:23.327Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T04:24:23.328Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T04:24:23.329Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T04:24:27.251Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T04:24:27.260Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T04:24:31.659Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T04:24:31.667Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T04:24:31.679Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T04:24:31.681Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T04:24:31.682Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T04:24:31.683Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T04:24:31.685Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T04:24:31.686Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T04:24:31.687Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T04:24:31.688Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T04:24:31.689Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T04:24:31.691Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T04:24:31.692Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T04:24:31.693Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T04:24:31.694Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:24:31.694Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T04:24:31.696Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:24:31.696Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T04:24:31.698Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T04:24:31.699Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T04:24:31.700Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T04:24:31.701Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T04:24:31.703Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T05:47:45.616Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T05:47:45.622Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T05:47:45.624Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T05:47:45.624Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T05:47:45.628Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T05:47:45.630Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T05:47:45.631Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"06:00","currency":"EUR","name":"ECB Interest Rate","minutesAway":12}}}
+{"timestamp":"2026-03-28T05:47:45.633Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T05:47:45.635Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T05:47:45.636Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T05:47:45.804Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T05:47:45.806Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T05:47:45.808Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T05:47:45.809Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T05:47:45.811Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T05:47:47.718Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T05:47:47.731Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T05:47:52.546Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T05:47:52.559Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T05:47:52.566Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T05:47:52.570Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T05:47:52.571Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T05:47:52.573Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T05:47:52.574Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T05:47:52.575Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T05:47:52.577Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T05:47:52.578Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T05:47:52.579Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T05:47:52.580Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T05:47:52.581Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T05:47:52.582Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T05:47:52.583Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T05:47:52.584Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T05:47:52.585Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T05:47:52.586Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T05:47:52.587Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T05:47:52.588Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T05:47:52.589Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T05:47:52.590Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T05:47:52.591Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T07:39:22.083Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:39:52.329Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:39:52.333Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T07:39:52.334Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:39:52.335Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T07:39:52.340Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:39:52.341Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:39:52.344Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"08:00","currency":"CHF","name":"Switzerland GDP","minutesAway":20}}}
+{"timestamp":"2026-03-28T07:39:52.345Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T07:39:52.346Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T07:39:52.347Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:39:52.489Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:39:52.490Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T07:39:52.492Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T07:39:52.493Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T07:39:52.494Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T07:39:53.355Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T07:39:53.363Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T07:39:57.625Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T07:39:57.633Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T07:39:57.641Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T07:39:57.648Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T07:39:57.650Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T07:39:57.651Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T07:39:57.652Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T07:39:57.653Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:39:57.655Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T07:39:57.656Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T07:39:57.657Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T07:39:57.658Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T07:39:57.659Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T07:39:57.660Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T07:39:57.661Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:39:57.662Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T07:39:57.662Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:39:57.663Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T07:39:57.664Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T07:39:57.665Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T07:39:57.666Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T07:39:57.667Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:39:57.668Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T07:45:25.561Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:45:25.564Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T07:45:25.564Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:45:25.565Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T07:45:25.570Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:45:25.571Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:45:25.573Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"08:00","currency":"CHF","name":"Switzerland GDP","minutesAway":15}}}
+{"timestamp":"2026-03-28T07:45:25.574Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T07:45:25.575Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T07:45:25.576Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:45:25.733Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:45:25.734Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T07:45:25.736Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T07:45:25.738Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T07:45:25.739Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T07:45:26.580Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T07:45:26.582Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T07:45:31.018Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T07:45:31.029Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T07:45:31.037Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T07:45:31.041Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T07:45:31.042Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T07:45:31.043Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T07:45:31.044Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T07:45:31.045Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:45:31.047Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T07:45:31.048Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T07:45:31.049Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T07:45:31.050Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T07:45:31.051Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T07:45:31.052Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T07:45:31.053Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:45:31.054Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T07:45:31.055Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:45:31.056Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T07:45:31.057Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T07:45:31.058Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T07:45:31.059Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T07:45:31.060Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:45:31.061Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T07:47:44.060Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:47:44.063Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T07:47:44.064Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:47:44.064Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T07:47:44.068Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:47:44.069Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:47:44.071Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"08:00","currency":"CHF","name":"Switzerland GDP","minutesAway":12}}}
+{"timestamp":"2026-03-28T07:47:44.073Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T07:47:44.074Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T07:47:44.075Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:47:44.242Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:47:44.243Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T07:47:44.245Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T07:47:44.246Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T07:47:44.247Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T07:48:05.377Z","level":"ERROR","message":"Failed to connect to IQ Option API","data":{"message":"request to https://auth.iqoption.com/api/v2/login failed, reason: connect ETIMEDOUT 185.117.132.1:443","type":"system","errno":"ETIMEDOUT","code":"ETIMEDOUT"}}
+{"timestamp":"2026-03-28T07:48:05.391Z","level":"ERROR","message":"Bot initialization failed","data":{}}
+{"timestamp":"2026-03-28T07:48:05.398Z","level":"ERROR","message":"Fatal error starting bot:","data":{}}
+{"timestamp":"2026-03-28T07:48:44.125Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:48:44.130Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T07:48:44.132Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:48:44.133Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T07:48:44.137Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:48:44.138Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:48:44.140Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"08:00","currency":"CHF","name":"Switzerland GDP","minutesAway":11}}}
+{"timestamp":"2026-03-28T07:48:44.141Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T07:48:44.142Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T07:48:44.143Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:48:44.289Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:48:44.293Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T07:48:44.295Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T07:48:44.296Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T07:48:44.297Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T07:48:45.163Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T07:48:45.176Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T07:48:56.744Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T07:48:56.759Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T07:48:56.766Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T07:48:56.768Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T07:48:56.769Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T07:48:56.770Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T07:48:56.771Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T07:48:56.773Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:48:56.774Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T07:48:56.775Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T07:48:56.776Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T07:48:56.778Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T07:48:56.779Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T07:48:56.780Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T07:48:56.781Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:48:56.782Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T07:48:56.783Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:48:56.784Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T07:48:56.786Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T07:48:56.787Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T07:48:56.789Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T07:48:56.790Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:48:56.791Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T07:50:21.559Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:52:33.012Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:52:59.079Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:52:59.082Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T07:52:59.084Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:52:59.085Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T07:52:59.089Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:52:59.092Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:52:59.096Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"08:00","currency":"CHF","name":"Switzerland GDP","minutesAway":7}}}
+{"timestamp":"2026-03-28T07:52:59.098Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T07:52:59.099Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T07:52:59.101Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:52:59.283Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:52:59.288Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T07:52:59.290Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T07:52:59.292Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T07:52:59.294Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T07:53:00.485Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T07:53:00.490Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T07:53:05.208Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T07:53:05.219Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T07:53:05.227Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T07:53:05.229Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T07:53:05.231Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T07:53:05.232Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T07:53:05.234Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T07:53:05.235Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:53:05.237Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T07:53:05.239Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T07:53:05.240Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T07:53:05.242Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T07:53:05.244Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T07:53:05.245Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T07:53:05.246Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:53:05.247Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T07:53:05.248Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:53:05.249Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T07:53:05.250Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T07:53:05.251Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T07:53:05.252Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T07:53:05.253Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:53:05.255Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T07:55:24.956Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:55:24.969Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T07:55:24.971Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:55:24.972Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T07:55:24.980Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:55:24.983Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:55:24.986Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"08:00","currency":"CHF","name":"Switzerland GDP","minutesAway":5}}}
+{"timestamp":"2026-03-28T07:55:24.989Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T07:55:24.990Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T07:55:24.993Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:55:25.321Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:55:25.323Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T07:55:25.327Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T07:55:25.329Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T07:55:25.332Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T07:55:26.333Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T07:55:26.341Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T07:55:31.184Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T07:55:31.192Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T07:55:31.201Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T07:55:31.203Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T07:55:31.205Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T07:55:31.206Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T07:55:31.208Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T07:55:31.210Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:55:31.212Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T07:55:31.213Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T07:55:31.215Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T07:55:31.216Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T07:55:31.218Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T07:55:31.219Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T07:55:31.221Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:55:31.222Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T07:55:31.223Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:55:31.224Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T07:55:31.225Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T07:55:31.227Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T07:55:31.228Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T07:55:31.229Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:55:31.230Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T07:57:47.295Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:57:47.299Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T07:57:47.301Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:57:47.302Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T07:57:47.307Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T07:57:47.309Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:57:47.312Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"08:00","currency":"CHF","name":"Switzerland GDP","minutesAway":2}}}
+{"timestamp":"2026-03-28T07:57:47.314Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T07:57:47.316Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T07:57:47.317Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:57:47.523Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T07:57:47.529Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T07:57:47.531Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T07:57:47.533Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T07:57:47.535Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T07:57:48.384Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T07:57:48.395Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T07:57:52.756Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T07:57:52.773Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T07:57:52.777Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T07:57:52.779Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T07:57:52.782Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T07:57:52.784Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T07:57:52.785Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T07:57:52.787Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T07:57:52.789Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T07:57:52.792Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T07:57:52.793Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T07:57:52.795Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T07:57:52.796Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T07:57:52.799Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T07:57:52.800Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:57:52.801Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T07:57:52.803Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:57:52.805Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T07:57:52.806Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T07:57:52.807Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T07:57:52.809Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T07:57:52.811Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T07:57:52.812Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T08:04:26.306Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:04:26.310Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T08:04:26.311Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:04:26.313Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T08:04:26.316Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T08:04:26.318Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:04:26.322Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"09:00","currency":"EUR","name":"EU CPI","minutesAway":56}}}
+{"timestamp":"2026-03-28T08:04:26.324Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T08:04:26.325Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T08:04:26.326Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:04:26.577Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:04:26.578Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T08:04:26.580Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T08:04:26.581Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T08:04:26.582Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T08:04:28.319Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T08:04:28.325Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T08:04:34.331Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T08:04:34.343Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T08:04:34.345Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T08:04:34.347Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T08:04:34.349Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T08:04:34.350Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T08:04:34.353Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T08:04:34.355Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:04:34.357Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T08:04:34.359Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T08:04:34.360Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T08:04:34.362Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T08:04:34.363Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T08:04:34.365Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T08:04:34.366Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:04:34.367Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T08:04:34.369Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:04:34.370Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T08:04:34.372Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T08:04:34.373Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T08:04:34.374Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T08:04:34.375Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:04:34.377Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T08:08:57.631Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:08:57.635Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T08:08:57.636Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:08:57.637Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T08:08:57.641Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T08:08:57.644Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:08:57.647Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"09:00","currency":"EUR","name":"EU CPI","minutesAway":51}}}
+{"timestamp":"2026-03-28T08:08:57.649Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T08:08:57.651Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T08:08:57.652Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:08:57.833Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:08:57.839Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T08:08:57.841Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T08:08:57.843Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T08:08:57.845Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T08:08:58.779Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T08:08:58.792Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T08:09:03.411Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T08:09:03.425Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T08:09:03.427Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T08:09:03.430Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T08:09:03.432Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T08:09:03.433Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T08:09:03.435Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T08:09:03.436Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:09:03.438Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T08:09:03.440Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T08:09:03.441Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T08:09:03.443Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T08:09:03.444Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T08:09:03.446Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T08:09:03.447Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:09:03.448Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T08:09:03.449Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:09:03.450Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T08:09:03.452Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T08:09:03.453Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T08:09:03.455Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T08:09:03.456Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:09:03.457Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T08:14:00.453Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:14:00.455Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T08:14:00.456Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:14:00.458Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T08:14:00.463Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T08:14:00.468Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:14:00.473Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"09:00","currency":"EUR","name":"EU CPI","minutesAway":46}}}
+{"timestamp":"2026-03-28T08:14:00.475Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T08:14:00.476Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T08:14:00.478Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:14:00.699Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:14:00.701Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T08:14:00.702Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T08:14:00.704Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T08:14:00.705Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T08:14:01.649Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T08:14:01.663Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T08:14:06.147Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T08:14:06.156Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T08:14:06.164Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T08:14:06.166Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T08:14:06.168Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T08:14:06.170Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T08:14:06.172Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T08:14:06.173Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:14:06.175Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T08:14:06.177Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T08:14:06.178Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T08:14:06.180Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T08:14:06.181Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T08:14:06.183Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T08:14:06.184Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:14:06.185Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T08:14:06.186Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:14:06.188Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T08:14:06.190Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T08:14:06.191Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T08:14:06.192Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T08:14:06.194Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:14:06.196Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T08:21:06.400Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T08:21:22.636Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:21:22.639Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T08:21:22.641Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:21:22.642Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T08:21:22.647Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T08:21:22.649Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:21:22.653Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"09:00","currency":"EUR","name":"EU CPI","minutesAway":39}}}
+{"timestamp":"2026-03-28T08:21:22.655Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T08:21:22.657Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T08:21:22.659Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:21:22.829Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:21:22.831Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T08:21:22.832Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T08:21:22.834Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T08:21:22.835Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T08:21:23.738Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T08:21:23.741Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T08:21:28.272Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T08:21:28.281Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T08:21:28.289Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T08:21:28.296Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T08:21:28.298Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T08:21:28.300Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T08:21:28.301Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T08:21:28.303Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:21:28.305Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T08:21:28.307Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T08:21:28.308Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T08:21:28.309Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T08:21:28.311Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T08:21:28.312Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T08:21:28.313Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:21:28.315Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T08:21:28.316Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:21:28.317Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T08:21:28.318Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T08:21:28.320Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T08:21:28.321Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T08:21:28.322Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:21:28.323Z","level":"WARN","message":"Bot is already running","data":null}
+{"timestamp":"2026-03-28T08:25:12.559Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:25:12.563Z","level":"INFO","message":"  IQ Option Trading Bot Starting...","data":null}
+{"timestamp":"2026-03-28T08:25:12.565Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:25:12.566Z","level":"INFO","message":"[1/4] Initializing News Filter...","data":null}
+{"timestamp":"2026-03-28T08:25:12.571Z","level":"INFO","message":"News Filter initialized (OFFLINE MODE)","data":null}
+{"timestamp":"2026-03-28T08:25:12.573Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:25:12.576Z","level":"INFO","message":"News Filter Status:","data":{"mode":"OFFLINE","isDisabled":false,"blockWindowMinutes":10,"totalScheduleItems":42,"cachedItems":42,"nextHighImpactNews":{"time":"09:00","currency":"EUR","name":"EU CPI","minutesAway":35}}}
+{"timestamp":"2026-03-28T08:25:12.578Z","level":"INFO","message":"[2/4] Validating Configuration...","data":null}
+{"timestamp":"2026-03-28T08:25:12.579Z","level":"INFO","message":"Configuration validated","data":null}
+{"timestamp":"2026-03-28T08:25:12.581Z","level":"INFO","message":"[3/4] Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:25:12.772Z","level":"INFO","message":"Initializing Trading Bot...","data":null}
+{"timestamp":"2026-03-28T08:25:12.774Z","level":"INFO","message":"IQ Option credentials set","data":{"email":"ovenkittipat55@gmail.com","accountType":"PRACTICE","hasPassword":true}}
+{"timestamp":"2026-03-28T08:25:12.775Z","level":"INFO","message":"Connecting to IQ Option API...","data":null}
+{"timestamp":"2026-03-28T08:25:12.777Z","level":"INFO","message":"Login attempt","data":{"email":"ovenkittipat55@gmail.com","hasPassword":true}}
+{"timestamp":"2026-03-28T08:25:12.778Z","level":"INFO","message":"Logging in...","data":null}
+{"timestamp":"2026-03-28T08:25:13.631Z","level":"INFO","message":"Login successful, got SSID","data":null}
+{"timestamp":"2026-03-28T08:25:13.642Z","level":"INFO","message":"Opening WebSocket connection...","data":null}
+{"timestamp":"2026-03-28T08:25:18.338Z","level":"INFO","message":"WebSocket connected","data":null}
+{"timestamp":"2026-03-28T08:25:18.351Z","level":"INFO","message":"Waiting for balances...","data":null}
+{"timestamp":"2026-03-28T08:25:18.355Z","level":"INFO","message":"Balances loaded","data":{"count":2,"balances":[{"id":1164502987,"type":1,"amount":0.17},{"id":1164502988,"type":4,"amount":4239.43}]}}
+{"timestamp":"2026-03-28T08:25:18.356Z","level":"INFO","message":"Balances received","data":{"count":2,"types":[1,4]}}
+{"timestamp":"2026-03-28T08:25:18.358Z","level":"INFO","message":"Account balances found","data":{"hasPractice":true,"hasReal":true}}
+{"timestamp":"2026-03-28T08:25:18.360Z","level":"INFO","message":"PRACTICE account selected","data":{"balanceId":1164502988,"balance":4239.43}}
+{"timestamp":"2026-03-28T08:25:18.361Z","level":"INFO","message":"Successfully connected to IQ Option API","data":{"accountType":"PRACTICE","balanceId":1164502988}}
+{"timestamp":"2026-03-28T08:25:18.363Z","level":"INFO","message":"News Filter initialized (offline mode)","data":{"scheduleItems":42,"mode":"OFFLINE"}}
+{"timestamp":"2026-03-28T08:25:18.365Z","level":"INFO","message":"Risk Manager initialized","data":{"dailyTarget":null,"dailyStopLoss":null}}
+{"timestamp":"2026-03-28T08:25:18.366Z","level":"INFO","message":"Initializing Execution Engine...","data":null}
+{"timestamp":"2026-03-28T08:25:18.368Z","level":"INFO","message":"Execution Engine initialized successfully","data":null}
+{"timestamp":"2026-03-28T08:25:18.369Z","level":"INFO","message":"Trading Bot initialized successfully","data":{"balance":4239.43,"activePairs":4,"version":"1.0.0","mode":"REAL","email":"ovenkittipat55@gmail.com","accountType":"PRACTICE"}}
+{"timestamp":"2026-03-28T08:25:18.371Z","level":"INFO","message":"Trading Bot initialized","data":null}
+{"timestamp":"2026-03-28T08:25:18.372Z","level":"INFO","message":"[4/4] Starting Trading...","data":null}
+{"timestamp":"2026-03-28T08:25:18.373Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:25:18.374Z","level":"INFO","message":"  BOT IS RUNNING","data":null}
+{"timestamp":"2026-03-28T08:25:18.375Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:25:18.376Z","level":"INFO","message":"Pairs:","data":["EURUSD","GBPUSD"]}
+{"timestamp":"2026-03-28T08:25:18.378Z","level":"INFO","message":"Timeframe:","data":5}
+{"timestamp":"2026-03-28T08:25:18.379Z","level":"INFO","message":"News Mode:","data":"OFFLINE"}
+{"timestamp":"2026-03-28T08:25:18.381Z","level":"INFO","message":"Press Ctrl+C to stop","data":null}
+{"timestamp":"2026-03-28T08:25:18.382Z","level":"INFO","message":"========================================","data":null}
+{"timestamp":"2026-03-28T08:25:18.383Z","level":"WARN","message":"Bot is already running","data":null}

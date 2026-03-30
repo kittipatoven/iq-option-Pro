@@ -1,0 +1,554 @@
+{
+  "timestamp": "2026-03-29T11:16:00.274Z",
+  "testType": "50_Trades_Validation",
+  "results": {
+    "totalTrades": 50,
+    "wins": 33,
+    "losses": 17,
+    "winrate": "66.0",
+    "profitFactor": "1.94",
+    "netProfit": 160,
+    "avgProfitPerTrade": "3.20"
+  },
+  "scoreAnalysis": {
+    "Score 5": {
+      "trades": [
+        {
+          "id": 1,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 2,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 3,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 4,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 5,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 6,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 7,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 8,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 9,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 10,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 11,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 12,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 13,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 14,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 15,
+          "rsi": 75,
+          "conditions": 3,
+          "marketType": "TREND",
+          "trend": "UP",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        }
+      ],
+      "wins": 13,
+      "profit": 110
+    },
+    "Score 4": {
+      "trades": [
+        {
+          "id": 16,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 17,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 18,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 19,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 20,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 21,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 22,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 23,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 24,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 25,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 26,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 27,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 28,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 29,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 30,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 31,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 32,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 33,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 34,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 35,
+          "rsi": 72,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        }
+      ],
+      "wins": 13,
+      "profit": 60
+    },
+    "Score 3": {
+      "trades": [
+        {
+          "id": 36,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 37,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 38,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 39,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 40,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 41,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 42,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 43,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 44,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 45,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 46,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 47,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 48,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "WIN",
+          "profit": 10,
+          "isWin": true
+        },
+        {
+          "id": 49,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        },
+        {
+          "id": 50,
+          "rsi": 65,
+          "conditions": 2,
+          "marketType": "SIDEWAY",
+          "trend": "NEUTRAL",
+          "result": "LOSS",
+          "profit": -10,
+          "isWin": false
+        }
+      ],
+      "wins": 7,
+      "profit": -10
+    }
+  },
+  "targetValidation": [
+    {
+      "name": "Winrate >= 58%",
+      "value": 66,
+      "target": 58,
+      "passed": true
+    },
+    {
+      "name": "Profit Factor >= 1.4",
+      "value": 1.94,
+      "target": 1.4,
+      "passed": true
+    },
+    {
+      "name": "Trades >= 20/session",
+      "value": 50,
+      "target": 20,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

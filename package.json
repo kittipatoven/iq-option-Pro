@@ -1,0 +1,41 @@
+{
+  "name": "iq-option-trading-bot",
+  "version": "1.0.0",
+  "description": "Multi-Pair IQ Option Trading Bot with Advanced Analytics",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js",
+    "test": "node tests/simulation.test.js",
+    "setup:real": "node setupRealMode.js",
+    "test:real": "node testRealMode.js",
+    "audit:real": "node auditRealMode.js",
+    "validate": "node -e \"const ConfigValidator=require('./src/config/validator'); console.log(ConfigValidator.validateRealModeConfig());\""
+  },
+  "keywords": [
+    "trading",
+    "iq-option",
+    "bot",
+    "forex",
+    "automated-trading"
+  ],
+  "author": "Trading Bot Developer",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "axios-cookiejar-support": "^6.0.5",
+    "dotenv": "^16.3.0",
+    "inquirer": "^8.2.7",
+    "iqoption": "^1.0.0",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.43",
+    "ssh2": "^1.17.0",
+    "technicalindicators": "^3.1.0",
+    "tough-cookie": "^6.0.1",
+    "ws": "^8.14.0",
+    "xml2js": "^0.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

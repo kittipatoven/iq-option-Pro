@@ -1,0 +1,35 @@
+=== BOT.JS DIAGNOSTIC ===
+File: D:\เขียนโค้ด\iq-option-Pro\src\core\bot.js
+Total lines: 198
+File size: 6670 bytes
+
+--- First 10 lines ---
+1: const EventEmitter = require('events');
+2: const logger = require('../utils/logger');
+3: const iqoptionAPI = require('../services/iqoption.api');
+4: const newsFilter = require('../filters/newsFilter');
+5: 
+6: class TradingBot extends EventEmitter {
+7:     constructor() {
+8:         super();
+9:         this.name = 'TradingBot';
+10:         this.isRunning = false;
+
+--- Last 10 lines ---
+189:             clearInterval(this.tradingInterval);
+190:             this.tradingInterval = null;
+191:         }
+192:         
+193:         console.log('🛑 Trading Bot Stopped');
+194:     }
+195: }
+196: 
+197: module.exports = TradingBot;
+198: 
+
+--- Try-Catch Analysis ---
+try blocks at lines: 21, 72, 139, 172
+catch blocks at lines: 88, 106, 154, 174
+
+--- Syntax Check ---
+✅ SYNTAX OK

@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-03-30T02:29:46.621Z",
+  "context": "Test Runner",
+  "message": "HTTP Login failed: Request failed with status code 404",
+  "stack": "Error: HTTP Login failed: Request failed with status code 404\n    at D:\\เขียนโค้ด\\iq-option-Pro\\src\\api\\iqOptionClient.js:1175:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+}

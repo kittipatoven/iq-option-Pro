@@ -1,0 +1,569 @@
+[
+  {
+    "timestamp": "2026-03-29T08:02:48.045Z",
+    "id": 1,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1017
+  },
+  {
+    "timestamp": "2026-03-29T08:05:48.120Z",
+    "id": 2,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1034
+  },
+  {
+    "timestamp": "2026-03-29T08:08:18.642Z",
+    "id": 3,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.2,
+    "balance": 1024
+  },
+  {
+    "timestamp": "2026-03-29T08:14:49.181Z",
+    "id": 4,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 6.9,
+    "balance": 1041
+  },
+  {
+    "timestamp": "2026-03-29T08:15:49.580Z",
+    "id": 5,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1058
+  },
+  {
+    "timestamp": "2026-03-29T08:16:49.597Z",
+    "id": 6,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.7,
+    "balance": 1075
+  },
+  {
+    "timestamp": "2026-03-29T09:10:42.199Z",
+    "id": 1,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1017
+  },
+  {
+    "timestamp": "2026-03-29T09:11:42.238Z",
+    "id": 2,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1034
+  },
+  {
+    "timestamp": "2026-03-29T09:13:42.666Z",
+    "id": 3,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.2,
+    "balance": 1024
+  },
+  {
+    "timestamp": "2026-03-29T09:15:13.088Z",
+    "id": 4,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1041
+  },
+  {
+    "timestamp": "2026-03-29T09:16:43.516Z",
+    "id": 5,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1058
+  },
+  {
+    "timestamp": "2026-03-29T09:17:43.554Z",
+    "id": 6,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1075
+  },
+  {
+    "timestamp": "2026-03-29T09:18:43.596Z",
+    "id": 7,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.2,
+    "balance": 1065
+  },
+  {
+    "timestamp": "2026-03-29T09:20:14.011Z",
+    "id": 8,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1082
+  },
+  {
+    "timestamp": "2026-03-29T09:21:44.099Z",
+    "id": 9,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 2.3,
+    "balance": 1072
+  },
+  {
+    "timestamp": "2026-03-29T09:22:05.498Z",
+    "id": 1,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 6,
+    "balance": 990
+  },
+  {
+    "timestamp": "2026-03-29T09:23:14.530Z",
+    "id": 10,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.2,
+    "balance": 1062
+  },
+  {
+    "timestamp": "2026-03-29T09:24:14.561Z",
+    "id": 11,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.7,
+    "balance": 1079
+  },
+  {
+    "timestamp": "2026-03-29T09:24:35.589Z",
+    "id": 2,
+    "direction": "put",
+    "amount": 9,
+    "profit": -9,
+    "score": 2.3,
+    "balance": 981
+  },
+  {
+    "timestamp": "2026-03-29T09:25:44.973Z",
+    "id": 12,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 6,
+    "balance": 1096
+  },
+  {
+    "timestamp": "2026-03-29T09:27:45.399Z",
+    "id": 13,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1113
+  },
+  {
+    "timestamp": "2026-03-29T09:28:05.675Z",
+    "id": 3,
+    "direction": "put",
+    "amount": 9,
+    "profit": -9,
+    "score": 2.3,
+    "balance": 972
+  },
+  {
+    "timestamp": "2026-03-29T09:30:06.124Z",
+    "id": 4,
+    "direction": "put",
+    "amount": 4,
+    "profit": -4,
+    "score": 3.2,
+    "balance": 968
+  },
+  {
+    "timestamp": "2026-03-29T09:31:06.530Z",
+    "id": 5,
+    "direction": "put",
+    "amount": 4,
+    "profit": -4,
+    "score": 2.3,
+    "balance": 964
+  },
+  {
+    "timestamp": "2026-03-29T09:31:45.504Z",
+    "id": 14,
+    "direction": "put",
+    "amount": 11,
+    "profit": -11,
+    "score": 3.7,
+    "balance": 1102
+  },
+  {
+    "timestamp": "2026-03-29T09:32:06.555Z",
+    "id": 6,
+    "direction": "put",
+    "amount": 2,
+    "profit": -2,
+    "score": 2.3,
+    "balance": 962
+  },
+  {
+    "timestamp": "2026-03-29T09:33:06.598Z",
+    "id": 7,
+    "direction": "put",
+    "amount": 2,
+    "profit": -2,
+    "score": 2.3,
+    "balance": 960
+  },
+  {
+    "timestamp": "2026-03-29T09:43:19.726Z",
+    "id": 1,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1017
+  },
+  {
+    "timestamp": "2026-03-29T09:44:20.125Z",
+    "id": 2,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.7,
+    "balance": 1034
+  },
+  {
+    "timestamp": "2026-03-29T09:45:50.534Z",
+    "id": 3,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1051
+  },
+  {
+    "timestamp": "2026-03-29T09:47:20.594Z",
+    "id": 4,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 2.3,
+    "balance": 1041
+  },
+  {
+    "timestamp": "2026-03-29T09:50:51.070Z",
+    "id": 5,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.7,
+    "balance": 1058
+  },
+  {
+    "timestamp": "2026-03-29T09:51:51.483Z",
+    "id": 6,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 2.3,
+    "balance": 1048
+  },
+  {
+    "timestamp": "2026-03-29T09:53:21.917Z",
+    "id": 7,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1065
+  },
+  {
+    "timestamp": "2026-03-29T09:55:20.655Z",
+    "id": 8,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.7,
+    "balance": 1055
+  },
+  {
+    "timestamp": "2026-03-29T09:56:21.058Z",
+    "id": 9,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 2.3,
+    "balance": 1045
+  },
+  {
+    "timestamp": "2026-03-29T09:57:15.984Z",
+    "id": 1,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1017
+  },
+  {
+    "timestamp": "2026-03-29T09:58:16.386Z",
+    "id": 2,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1034
+  },
+  {
+    "timestamp": "2026-03-29T09:59:21.136Z",
+    "id": 10,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.7,
+    "balance": 1035
+  },
+  {
+    "timestamp": "2026-03-29T09:59:46.441Z",
+    "id": 3,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.7,
+    "balance": 1024
+  },
+  {
+    "timestamp": "2026-03-29T10:00:46.480Z",
+    "id": 4,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.7,
+    "balance": 1041
+  },
+  {
+    "timestamp": "2026-03-29T10:02:46.904Z",
+    "id": 5,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.7,
+    "balance": 1031
+  },
+  {
+    "timestamp": "2026-03-29T10:03:47.318Z",
+    "id": 6,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 2.3,
+    "balance": 1021
+  },
+  {
+    "timestamp": "2026-03-29T10:05:47.753Z",
+    "id": 7,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.2,
+    "balance": 1011
+  },
+  {
+    "timestamp": "2026-03-29T10:06:48.147Z",
+    "id": 8,
+    "direction": "put",
+    "amount": 5,
+    "profit": 4.25,
+    "score": 3.7,
+    "balance": 1019.5
+  },
+  {
+    "timestamp": "2026-03-29T10:09:18.213Z",
+    "id": 9,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 2.3,
+    "balance": 1009.5
+  },
+  {
+    "timestamp": "2026-03-29T10:16:26.626Z",
+    "id": 1,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1017
+  },
+  {
+    "timestamp": "2026-03-29T10:17:57.050Z",
+    "id": 2,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1034
+  },
+  {
+    "timestamp": "2026-03-29T10:19:57.115Z",
+    "id": 3,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.7,
+    "balance": 1051
+  },
+  {
+    "timestamp": "2026-03-29T10:21:27.175Z",
+    "id": 4,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 3.2,
+    "balance": 1041
+  },
+  {
+    "timestamp": "2026-03-29T10:23:57.278Z",
+    "id": 5,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1058
+  },
+  {
+    "timestamp": "2026-03-29T10:27:02.376Z",
+    "id": 1,
+    "direction": "put",
+    "amount": 10,
+    "profit": 0,
+    "score": 3.2,
+    "balance": 1000
+  },
+  {
+    "timestamp": "2026-03-29T10:27:27.393Z",
+    "id": 6,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.7,
+    "balance": 1075
+  },
+  {
+    "timestamp": "2026-03-29T10:29:57.450Z",
+    "id": 7,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 2.3,
+    "balance": 1092
+  },
+  {
+    "timestamp": "2026-03-29T10:30:58.458Z",
+    "id": 2,
+    "direction": "put",
+    "amount": 10,
+    "profit": 0,
+    "score": 3.7,
+    "balance": 1000
+  },
+  {
+    "timestamp": "2026-03-29T10:31:27.505Z",
+    "id": 8,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1109
+  },
+  {
+    "timestamp": "2026-03-29T10:33:27.984Z",
+    "id": 9,
+    "direction": "put",
+    "amount": 11,
+    "profit": -11,
+    "score": 2.3,
+    "balance": 1098
+  },
+  {
+    "timestamp": "2026-03-29T10:34:28.015Z",
+    "id": 10,
+    "direction": "put",
+    "amount": 10,
+    "profit": -10,
+    "score": 2.3,
+    "balance": 1088
+  },
+  {
+    "timestamp": "2026-03-29T10:36:28.466Z",
+    "id": 11,
+    "direction": "put",
+    "amount": 10,
+    "profit": 8.5,
+    "score": 3.2,
+    "balance": 1105
+  },
+  {
+    "timestamp": "2026-03-29T10:37:58.906Z",
+    "id": 12,
+    "direction": "put",
+    "amount": 11,
+    "profit": 9.35,
+    "score": 2.3,
+    "balance": 1123.6999999999998
+  },
+  {
+    "timestamp": "2026-03-29T10:38:58.944Z",
+    "id": 13,
+    "direction": "put",
+    "amount": 11,
+    "profit": -11,
+    "score": 3.7,
+    "balance": 1112.6999999999998
+  },
+  {
+    "timestamp": "2026-03-29T10:40:29.116Z",
+    "id": 14,
+    "direction": "put",
+    "amount": 11,
+    "profit": -11,
+    "score": 2.3,
+    "balance": 1101.6999999999998
+  },
+  {
+    "timestamp": "2026-03-29T10:40:30.066Z",
+    "id": 3,
+    "direction": "put",
+    "amount": 10,
+    "profit": 0,
+    "score": 3.2,
+    "balance": 1000
+  }
+]

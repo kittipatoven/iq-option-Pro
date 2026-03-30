@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-03-30T02:37:56.302Z",
+  "context": "Test Runner",
+  "message": "this.generateMessageId is not a function",
+  "stack": "TypeError: this.generateMessageId is not a function\n    at IQOptionClient.sendMessage (D:\\เขียนโค้ด\\iq-option-Pro\\src\\api\\iqOptionClient.js:1010:30)\n    at D:\\เขียนโค้ด\\iq-option-Pro\\src\\api\\iqOptionClient.js:1129:26\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+}

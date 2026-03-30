@@ -1,0 +1,11 @@
+# Proxy Pool for IQ Option Bot
+# Format: http://ip:port or http://user:pass@ip:port
+# หา Proxy ฟรีได้ที่: https://free-proxy-list.net/
+
+# ตัวอย่าง (เพิ่ม proxy จริงของคุณ):
+# http://proxy1.example.com:8080
+# http://user:pass@proxy2.example.com:8080
+# http://203.0.113.1:8080
+# http://198.51.100.50:3128
+
+# ถ้าไม่มี proxy ในไฟล์นี้ จะใช้ HTTPS_PROXY จาก .env แทน

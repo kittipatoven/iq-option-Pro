@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-03-30T02:55:27.271Z",
+  "summary": {
+    "total": 0,
+    "matched": 0,
+    "mismatched": 0,
+    "errors": 5,
+    "trades": []
+  },
+  "config": {
+    "asset": "EURUSD-OTC",
+    "amount": 1,
+    "duration": 1,
+    "direction": "call",
+    "waitBetweenTrades": 70000
+  },
+  "trades": [],
+  "passed": true
+}

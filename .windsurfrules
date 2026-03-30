@@ -1,0 +1,286 @@
+# ================================
+
+# WINDSURF RULES: IQ OPTION SMART BOT
+
+# ================================
+
+role: Senior Full-Stack Developer + Algorithmic Trading Engineer
+
+goal: >
+พัฒนา Smart Adaptive Trading Bot สำหรับ IQ Option
+ที่สามารถใช้งานได้จริง 100% (Production Ready)
+พร้อมระบบวิเคราะห์ตลาด + ปรับกลยุทธ์อัตโนมัติ + เทรดได้จริง
+
+# ================================
+
+# CORE EXECUTION LOOP (ห้ามข้าม)
+
+# ================================
+
+execution_loop:
+
+* analyze
+* design
+* code
+* test
+* debug
+* optimize
+* repeat_until_success
+
+stop_condition:
+
+* system_runs_without_error: true
+* api_connected: true
+* trade_execution_success: true
+
+# ================================
+
+# GLOBAL RULES
+
+# ================================
+
+rules:
+
+* ALWAYS explain logic before writing code
+* ALWAYS include error handling
+* ALWAYS include logging system
+* NEVER skip debugging
+* NEVER assume code works without testing
+* ALWAYS validate async/await correctness
+* ALWAYS handle API failure & retry
+* ALWAYS separate modules into files
+* ALWAYS simulate before real trading
+
+# ================================
+
+# PROJECT STRUCTURE
+
+# ================================
+
+project_structure:
+
+root:
+- app.js
+- config/
+- core/
+- indicators/
+- strategies/
+- services/
+- utils/
+- logs/
+- tests/
+
+config:
+- api.config.js
+- trading.config.js
+- risk.config.js
+
+core:
+- bot.engine.js
+- execution.engine.js
+- market.detector.js
+- score.engine.js
+
+indicators:
+- rsi.js
+- macd.js
+- bollinger.js
+- movingAverage.js
+
+strategies:
+- reversal.strategy.js
+- breakout.strategy.js
+- trend.strategy.js
+
+services:
+- iqoption.api.js
+- news.service.js
+- websocket.service.js
+
+utils:
+- logger.js
+- error.handler.js
+- retry.js
+
+tests:
+- simulation.test.js
+
+# ================================
+
+# MODULE REQUIREMENTS
+
+# ================================
+
+modules:
+
+IndicatorEngine:
+description: >
+คำนวณ RSI, MACD, Bollinger Bands, MA
+must_have:
+- real_time_calculation
+- configurable_parameters
+- return_signal_object
+
+MarketDetection:
+description: >
+ตรวจจับ Trend / Sideway / Breakout
+must_have:
+- volatility_check
+- trend_strength
+- range_detection
+
+StrategyEngine:
+description: >
+เลือกกลยุทธ์อัตโนมัติ
+must_have:
+- dynamic_strategy_selection
+- multi_indicator_confirmation
+
+ScoreSystem:
+description: >
+ให้คะแนนความมั่นใจของสัญญาณ
+must_have:
+- weighted_score
+- threshold_filter
+
+NewsFilter:
+description: >
+กรองข่าวแรง (High Impact News)
+must_have:
+- skip_trading_during_news
+- api_news_fetch
+
+ExecutionSystem:
+description: >
+ส่งคำสั่งเทรดไป IQ Option
+must_have:
+- order_execution
+- order_status_tracking
+- retry_on_fail
+
+RiskManagement:
+description: >
+ควบคุมความเสี่ยง
+must_have:
+- max_loss_limit
+- martingale_optional
+- stop_loss_daily
+
+# ================================
+
+# CODING RULES
+
+# ================================
+
+coding_rules:
+
+* use_async_await_only: true
+* no_callback_hell: true
+* modular_code: true
+* clean_architecture: true
+
+error_handling:
+- try_catch_required: true
+- log_all_errors: true
+- fallback_logic: true
+
+logging:
+- log_levels: [info, warn, error, debug]
+- log_every_trade: true
+- log_api_calls: true
+
+# ================================
+
+# DEBUG RULES
+
+# ================================
+
+debug_rules:
+
+* check_syntax_error
+* check_runtime_error
+* check_api_response
+* check_async_flow
+* check_trade_execution
+
+on_error:
+- identify_root_cause
+- fix_immediately
+- re-test
+- log_issue
+
+# ================================
+
+# TESTING RULES
+
+# ================================
+
+testing:
+
+* simulate_trading_before_real: true
+* test_each_module_individually: true
+* mock_api_if_needed: true
+* validate_signal_accuracy: true
+
+# ================================
+
+# EXECUTION FLOW
+
+# ================================
+
+flow:
+
+* fetch_market_data
+* calculate_indicators
+* detect_market_condition
+* select_strategy
+* calculate_score
+* filter_news
+* execute_trade
+* log_result
+
+# ================================
+
+# SUCCESS METRICS
+
+# ================================
+
+success:
+
+* winrate_target: 60%+
+* stable_execution: true
+* no_crash: true
+* real_trade_success: true
+
+# ================================
+
+# FINAL RULE
+
+# ================================
+
+final_rule:
+NEVER STOP until bot can:
+- connect to IQ Option API
+- analyze market
+- execute trade successfully
+- run continuously without crash
+
+# ================================
+
+# START TASK
+
+# ================================
+
+start:
+
+step_1: create_project_structure
+step_2: build_logger_system
+step_3: build_error_handler
+step_4: connect_iqoption_api
+step_5: build_indicator_engine
+
+# ================================
+
+# END
+
+# ================================

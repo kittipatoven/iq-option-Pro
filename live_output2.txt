@@ -1,0 +1,19 @@
+[2026-03-29T14:43:12.435Z] INFO: News Filter initialized (OFFLINE MODE)
+
+================================================================================
+     IQ OPTION SMART BOT - LIVE MODE
+================================================================================
+
+⚠️  Using default config
+💰 Money Manager initialized: $1000
+   Trade size: 1% = $10
+   Max daily loss: 5% = $50.00
+   Profit Lock: Stop if balance < 95% of peak
+   Scaling: +20% capital at +10% monthly profit
+   Withdrawal: 30% of profit at +10% monthly profit
+   Weekly Protection: Stop 7 days if weekly loss >= 10%
+⚠️  LIVE TRADING MODE - REAL MONEY AT RISK!
+Press Ctrl+C within 5 seconds to cancel...
+
+🔌 Connecting to IQ Option WebSocket API...
+📡 Connecting to IQ Option WebSocket...
