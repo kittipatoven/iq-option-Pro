@@ -329,11 +329,26 @@ class IQOptionAPI extends EventEmitter {
      * HEARTBEAT - Keep connection alive
      */
     startHeartbeat() {
-        setInterval(() => {
+        // Clear any existing heartbeat
+        if (this.heartbeatInterval) {
+            clearInterval(this.heartbeatInterval);
+        }
+        
+        this.heartbeatInterval = setInterval(() => {
             if (this.connected) {
                 this.sendMessage({ name: 'heartbeat', msg: Date.now() });
             }
         }, 30000); // Every 30 seconds
+    }
+    
+    /**
+     * Stop heartbeat
+     */
+    stopHeartbeat() {
+        if (this.heartbeatInterval) {
+            clearInterval(this.heartbeatInterval);
+            this.heartbeatInterval = null;
+        }
     }
 
     /**
@@ -379,9 +394,10 @@ class IQOptionAPI extends EventEmitter {
     }
 
     /**
-     * DISCONNECT
+     * DISCONNECT with proper cleanup
      */
     disconnect() {
+        this.stopHeartbeat();
         if (this.ws) {
             this.ws.close();
         }

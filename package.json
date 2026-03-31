@@ -26,7 +26,7 @@
     "axios-cookiejar-support": "^6.0.5",
     "dotenv": "^16.3.0",
     "inquirer": "^8.2.7",
-    "iqoption": "^1.0.0",
+    "iqoption": "^1.0.1",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.43",
     "ssh2": "^1.17.0",

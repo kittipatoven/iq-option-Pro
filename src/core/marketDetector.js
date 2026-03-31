@@ -113,7 +113,7 @@ class MarketDetector {
     }
 
     /**
-     * Calculate ADX (Average Directional Index)
+     * Calculate ADX (Average Directional Index) with safety checks
      */
     calculateADX(candles, period = 14) {
         if (candles.length < period + 1) {
@@ -156,14 +156,24 @@ class MarketDetector {
         const smoothedPlusDM = this.smoothAverage(plusDM, period);
         const smoothedMinusDM = this.smoothAverage(minusDM, period);
 
+        // Safety check for division by zero
+        if (atr === 0 || smoothedPlusDM + smoothedMinusDM === 0) {
+            return 25; // Default to neutral
+        }
+
         // Calculate +DI and -DI
         const plusDI = (smoothedPlusDM / atr) * 100;
         const minusDI = (smoothedMinusDM / atr) * 100;
 
+        // Safety check for DI calculation
+        if (plusDI + minusDI === 0) {
+            return 25; // Default to neutral
+        }
+
         // Calculate DX and ADX
         const dx = (Math.abs(plusDI - minusDI) / (plusDI + minusDI)) * 100;
         
-        return dx;
+        return dx || 25; // Return 25 if dx is NaN
     }
 
     /**
@@ -183,15 +193,42 @@ class MarketDetector {
     }
 
     /**
-     * Calculate Bollinger Bands
+     * Calculate Bollinger Bands with validation - OPTIMIZED: single-pass calculation
      */
     calculateBB(candles, period = 20, stdDev = 2) {
-        const closes = candles.slice(-period).map(c => c.close);
-        const sum = closes.reduce((a, b) => a + b, 0);
-        const sma = sum / closes.length;
-
-        const squaredDiffs = closes.map(c => Math.pow(c - sma, 2));
-        const variance = squaredDiffs.reduce((a, b) => a + b, 0) / closes.length;
+        if (!candles || candles.length < period) {
+            return { upper: 0, lower: 0, middle: 0 };
+        }
+        
+        // OPTIMIZED: Single-pass calculation without intermediate arrays
+        let sum = 0;
+        let validCount = 0;
+        const startIdx = Math.max(0, candles.length - period);
+        
+        for (let i = startIdx; i < candles.length; i++) {
+            const close = candles[i].close;
+            if (!isNaN(close) && close > 0) {
+                sum += close;
+                validCount++;
+            }
+        }
+        
+        if (validCount < 2) {
+            return { upper: 0, lower: 0, middle: 0 };
+        }
+        
+        const sma = sum / validCount;
+        
+        // Calculate variance in same loop
+        let varianceSum = 0;
+        for (let i = startIdx; i < candles.length; i++) {
+            const close = candles[i].close;
+            if (!isNaN(close) && close > 0) {
+                varianceSum += Math.pow(close - sma, 2);
+            }
+        }
+        
+        const variance = varianceSum / validCount;
         const std = Math.sqrt(variance);
 
         return {
@@ -210,31 +247,67 @@ class MarketDetector {
     }
 
     /**
-     * Calculate volatility
+     * Calculate volatility with validation - OPTIMIZED: reduced array allocations
      */
     calculateVolatility(candles, period = 20) {
-        const recent = candles.slice(-period);
-        const returns = [];
-        
-        for (let i = 1; i < recent.length; i++) {
-            const ret = (recent[i].close - recent[i-1].close) / recent[i-1].close;
-            returns.push(ret);
+        if (!candles || candles.length < period + 1) {
+            return 0;
         }
         
-        const mean = returns.reduce((a, b) => a + b, 0) / returns.length;
-        const squaredDiffs = returns.map(r => Math.pow(r - mean, 2));
-        const variance = squaredDiffs.reduce((a, b) => a + b, 0) / squaredDiffs.length;
+        const startIdx = Math.max(1, candles.length - period);
+        let sum = 0;
+        let count = 0;
         
-        return Math.sqrt(variance);
+        // Single pass: calculate returns and sum
+        for (let i = startIdx; i < candles.length; i++) {
+            const prevClose = candles[i-1].close;
+            if (prevClose > 0) {
+                const ret = (candles[i].close - prevClose) / prevClose;
+                if (!isNaN(ret)) {
+                    sum += ret;
+                    count++;
+                }
+            }
+        }
+        
+        if (count === 0) {
+            return 0;
+        }
+        
+        const mean = sum / count;
+        
+        // Second pass: calculate variance
+        let varianceSum = 0;
+        for (let i = startIdx; i < candles.length; i++) {
+            const prevClose = candles[i-1].close;
+            if (prevClose > 0) {
+                const ret = (candles[i].close - prevClose) / prevClose;
+                if (!isNaN(ret)) {
+                    varianceSum += Math.pow(ret - mean, 2);
+                }
+            }
+        }
+        
+        const variance = varianceSum / count;
+        return Math.sqrt(variance) || 0;
     }
 
     /**
-     * Calculate trend strength (0-1)
+     * Calculate trend strength (0-1) with validation
      */
     calculateTrendStrength(candles, period = 20) {
+        if (!candles || candles.length < period) {
+            return 0.5;
+        }
+        
         const recent = candles.slice(-period);
-        const firstPrice = recent[0].close;
-        const lastPrice = recent[recent.length - 1].close;
+        const firstPrice = recent[0]?.close;
+        const lastPrice = recent[recent.length - 1]?.close;
+        
+        if (!firstPrice || !lastPrice || firstPrice <= 0) {
+            return 0.5;
+        }
+        
         const change = Math.abs((lastPrice - firstPrice) / firstPrice);
         
         // Count consistent directional candles

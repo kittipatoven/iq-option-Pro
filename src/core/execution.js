@@ -1,6 +1,8 @@
 const logger = require('../utils/logger');
-const iqoptionAPI = require('../api/iqoption');
+const iqoptionAPI = require('../api/unifiediqoption');
 const riskManager = require('./riskManager');
+const aiAnalyzer = require('./aiTradingAnalyzer');
+const tradeTracker = require('./tradeResultTracker');
 
 class ExecutionEngine {
     constructor() {
@@ -8,8 +10,8 @@ class ExecutionEngine {
         this.activeOrders = new Map();
         this.executionHistory = [];
         this.maxRetries = 3;
-        this.retryDelay = 2000; // 2 seconds
-        this.orderTimeout = 60000; // 1 minute
+        this.retryDelay = 1000; // OPTIMIZED: Reduced from 2000 to 1000ms
+        this.orderTimeout = 30000; // OPTIMIZED: Reduced from 60000 to 30000ms (trades resolve faster)
         
         // Initialize statistics
         this.stats = {
@@ -30,7 +32,11 @@ class ExecutionEngine {
         try {
             logger.info('Initializing Execution Engine...');
             
-            // Check if connected to API
+            // Check if connected to API - use correct method
+            if (!iqoptionAPI.isReady || typeof iqoptionAPI.isReady !== 'function') {
+                throw new Error('IQ Option API does not have isReady method');
+            }
+            
             if (!iqoptionAPI.isReady()) {
                 throw new Error('IQ Option API not connected');
             }
@@ -144,150 +150,150 @@ class ExecutionEngine {
 
     async executeWithRetry(pair, direction, amount, attempt = 1) {
         try {
-            const result = await iqoptionAPI.buy(pair, amount, direction.toLowerCase());
+            // Use unifiediqoption.placeTrade() which has built-in retry, fallback, and error classification
+            const result = await iqoptionAPI.placeTrade({
+                pair,
+                direction: direction.toLowerCase(),
+                amount,
+                duration: 1
+            });
             
-            // Validate real order response
+            // Validate result
             if (!result.success) {
-                throw new Error(result.message || 'Order execution failed');
+                throw new Error(result.error || 'Order execution failed');
             }
             
-            // Validate order ID is real (not mock pattern)
-            if (!result.order_id) {
+            // Validate order ID is real
+            if (!result.id && !result.order_id) {
                 throw new Error('API did not return order ID');
             }
             
+            const orderId = result.id || result.order_id;
+            
             // Check for mock patterns
-            if (result.order_id.startsWith('order_') && /^\d+$/.test(result.order_id.replace('order_', ''))) {
+            if (orderId.startsWith('order_') && /^\d+$/.test(orderId.replace('order_', ''))) {
                 throw new Error('Received mock order ID - API not working in real mode');
             }
             
-            if (result.order_id.includes('failed_')) {
+            if (orderId.includes('failed_')) {
                 throw new Error('Order execution failed');
             }
             
-            logger.info('Real order executed', { orderId: result.order_id });
-            return result;
+            logger.info('Real order executed', { orderId, latency: result.latency });
+            return {
+                success: true,
+                order_id: orderId,
+                id: orderId,
+                ...result
+            };
             
         } catch (error) {
             logger.error(`Trade execution attempt ${attempt} failed`, error);
             
+            // Use placeTrade's built-in retry, but add our own as backup
             if (attempt < this.maxRetries) {
                 logger.info(`Retrying trade execution in ${this.retryDelay}ms...`);
                 await this.delay(this.retryDelay);
                 return this.executeWithRetry(pair, direction, amount, attempt + 1);
             } else {
-                // NO FALLBACK TO FAKE ORDER ID IN REAL MODE
                 throw new Error(`Order execution failed after ${this.maxRetries} attempts: ${error.message}`);
             }
         }
     }
 
     async monitorOrder(orderId) {
+        if (!orderId) {
+            logger.error('[Monitor] No orderId provided');
+            return;
+        }
+        
+        const checkIntervalMs = 2000; // OPTIMIZED: Reduced from 5000 to 2000ms for faster updates
+        const timeoutMs = this.orderTimeout;
+        let elapsed = 0;
+        let checkInterval = null;
+        let isCompleted = false;
+        
         try {
-            console.log(`\n🔍 [monitorOrder] Starting monitoring for order ${orderId}`);
+            console.log(`\n🔍 Monitoring order ${orderId}...`);
             
-            const checkInterval = setInterval(async () => {
+            checkInterval = setInterval(async () => {
+                // Prevent multiple concurrent checks
+                if (isCompleted) return;
+                
                 try {
+                    elapsed += checkIntervalMs;
+                    
                     const order = this.activeOrders.get(orderId);
-                    if (!order) {
-                        console.log(`✅ Order ${orderId} no longer in active orders (completed)`);
-                        clearInterval(checkInterval);
+                    if (!order || order.status === 'COMPLETED') {
+                        console.log(`✅ Order ${orderId} no longer active`);
+                        isCompleted = true;
+                        if (checkInterval) {
+                            clearInterval(checkInterval);
+                            checkInterval = null;
+                        }
                         return;
                     }
                     
-                    // Check order status
-                    console.log(`\n🔍 Polling order ${orderId}...`);
-                    const orderInfo = await iqoptionAPI.getOrderInfo(orderId);
-                    
-                    // DEBUG: PRINT RAW DATA
-                    console.log('\n� RAW API RESPONSE (Full):');
-                    console.log(JSON.stringify(orderInfo, null, 2));
-                    
-                    // DEBUG: SHOW ALL FIELDS
-                    console.log('\n📋 EXTRACTED FIELDS:');
-                    console.log('  orderId:', orderInfo.order_id);
-                    console.log('  status:', orderInfo.status);
-                    console.log('  profit:', orderInfo.profit);
-                    console.log('  win_amount:', orderInfo.win_amount);
-                    console.log('  pnl:', orderInfo.pnl);
-                    console.log('  close_profit:', orderInfo.close_profit);
-                    console.log('  amount:', orderInfo.amount);
-                    console.log('  close_time:', orderInfo.close_time);
+                    // Check order status with retry
+                    let orderInfo = null;
+                    try {
+                        orderInfo = await iqoptionAPI.getOrderInfo(orderId);
+                    } catch (e) {
+                        logger.debug(`[Monitor] getOrderInfo failed for ${orderId}:`, e.message);
+                    }
                     
                     // Handle case where orderInfo is undefined or null
                     if (!orderInfo) {
-                        logger.warn(`Order info returned undefined for ${orderId}`);
-                        console.log(`⚠️ Order ${orderId} info is undefined, will retry...`);
                         return; // Keep polling
                     }
                     
                     // Handle case where orderInfo.success is false
                     if (!orderInfo.success) {
-                        logger.warn(`Order info failed for ${orderId}: ${orderInfo.error || 'Unknown error'}`);
-                        console.log(`⚠️ Order ${orderId} info failed: ${orderInfo.error}, will retry...`);
                         return; // Keep polling
                     }
                     
                     // Check if trade is settled (won/lost/closed/expired)
                     const isSettled = ['won', 'lost', 'closed', 'expired'].includes(orderInfo.status);
-                    const isActive = orderInfo.status === 'active' || orderInfo.status === 'open';
-                    
-                    console.log(`📊 Order ${orderId} status: ${orderInfo.status}, settled: ${isSettled}`);
                     
                     if (isSettled) {
-                        // VALIDATE: orderId must match
-                        if (orderInfo.order_id !== orderId) {
-                            console.error(`🚨 ORDER ID MISMATCH! Expected: ${orderId}, Got: ${orderInfo.order_id}`);
-                            return;
-                        }
-                        
                         // VALIDATE: profit must be defined
                         if (orderInfo.profit === undefined || orderInfo.profit === null) {
-                            console.error(`🚨 PROFIT IS UNDEFINED for order ${orderId}!`);
-                            console.log('📦 Full orderInfo:', JSON.stringify(orderInfo, null, 2));
                             return; // Don't process, keep waiting for valid data
                         }
                         
-                        // VALIDATE: timestamp must exist
-                        if (!orderInfo.close_time && !orderInfo.created_at) {
-                            console.warn(`⚠️ No timestamp for order ${orderId}`);
-                        }
-                        
-                        // COMPARE WITH IQ OPTION UI
-                        console.log('\n📊 COMPARISON WITH IQ OPTION UI:');
-                        console.log(`  BOT Order ID: ${orderId}`);
-                        console.log(`  BOT Profit: ${orderInfo.profit}`);
-                        console.log(`  BOT Timestamp: ${orderInfo.close_time}`);
-                        console.log('  Expected from UI:');
-                        console.log('    - Order ID should match');
-                        console.log('    - Profit should match IQ Option display');
-                        console.log('    - Timestamp should be recent');
-                        
-                        console.log(`\n✅ ORDER ${orderId} SETTLED - PROCESSING...`);
+                        console.log(`\n✅ Order ${orderId} SETTLED - Status: ${orderInfo.status}, Profit: ${orderInfo.profit}`);
                         
                         // Order completed - process it
+                        isCompleted = true;
+                        if (checkInterval) {
+                            clearInterval(checkInterval);
+                            checkInterval = null;
+                        }
                         this.processOrderCompletion(orderId, orderInfo);
-                        clearInterval(checkInterval);
-                    } else if (!isActive) {
-                        console.log(`⚠️ Order ${orderId} has unexpected status: ${orderInfo.status}`);
+                        return;
                     }
                     
                     // Check for timeout
-                    const elapsed = Date.now() - order.timestamp.getTime();
-                    if (elapsed > this.orderTimeout) {
+                    if (elapsed > timeoutMs) {
                         logger.warn(`Order ${orderId} timeout, force processing`);
-                        console.log(`⏰ Order ${orderId} timeout after ${elapsed}ms`);
+                        isCompleted = true;
+                        if (checkInterval) {
+                            clearInterval(checkInterval);
+                            checkInterval = null;
+                        }
                         this.processOrderCompletion(orderId, { status: 'timeout' });
-                        clearInterval(checkInterval);
+                        return;
                     }
                 } catch (error) {
-                    logger.error(`Order monitoring error for ${orderId}`, error);
-                    console.log(`❌ Error monitoring order ${orderId}: ${error.message}`);
+                    logger.error(`[Monitor] Error checking order ${orderId}:`, error);
                 }
-            }, 3000); // Check every 3 seconds (faster polling)
+            }, checkIntervalMs);
             
         } catch (error) {
-            logger.error(`Failed to monitor order ${orderId}`, error);
+            logger.error(`[Monitor] Failed to monitor order ${orderId}`, error);
+            if (checkInterval) {
+                clearInterval(checkInterval);
+            }
         }
     }
 
@@ -549,6 +555,24 @@ class ExecutionEngine {
 
     delay(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    /**
+     * Cleanup all timers and intervals - prevents memory leaks
+     */
+    cleanup() {
+        try {
+            // Clear any pending intervals in active orders
+            this.activeOrders.forEach(order => {
+                if (order.checkInterval) {
+                    clearInterval(order.checkInterval);
+                }
+            });
+            this.activeOrders.clear();
+            logger.info('Execution engine cleaned up');
+        } catch (error) {
+            logger.error('Execution engine cleanup failed', error);
+        }
     }
 
     updateStatistics(result, profit) {

@@ -138,13 +138,13 @@ async function showStatus() {
         
         console.log('\n=== BOT STATUS ===');
         console.log(`Running: ${status.isRunning ? 'YES' : 'NO'}`);
-        console.log(`Version: ${status.version}`);
+        console.log(`Version: ${status.version || 'N/A'}`);
         console.log(`Start Time: ${status.startTime || 'N/A'}`);
         console.log(`Last Analysis: ${status.lastAnalysisTime || 'N/A'}`);
-        console.log(`Total Analyses: ${status.stats.totalAnalyses}`);
-        console.log(`Total Trades: ${status.stats.totalTrades}`);
-        console.log(`Pairs Traded: ${status.stats.pairsTraded.size}`);
-        console.log(`Active Pairs: ${status.activePairs}`);
+        console.log(`Total Analyses: ${status.stats?.totalAnalyses || 0}`);
+        console.log(`Total Trades: ${status.stats?.totalTrades || 0}`);
+        console.log(`Pairs Traded: ${status.stats?.pairsTraded?.size || 0}`);
+        console.log(`Active Pairs: ${status.activePairs || 'N/A'}`);
         
         if (status.riskMetrics) {
             console.log('\n=== RISK METRICS ===');
