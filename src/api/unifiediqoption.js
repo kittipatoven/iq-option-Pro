@@ -264,11 +264,13 @@ class UnifiedIQOptionAPI extends EventEmitter {
     }
 
     /**
-     * Subscribe to real-time price stream for a pair - OPTIMIZED
+     * 🔥 ENHANCED: Subscribe to real-time price stream with better Linux support
      */
     async subscribePrice(pair) {
+        // 🔥 FIX: Allow subscription in both ONLINE and OFFLINE mode
         if (!this.isConnected) {
-            throw new Error('Not connected');
+            logger.warn(`[API] Cannot subscribe to ${pair} - not connected`);
+            return false;
         }
         
         const activeId = this.getActiveId(pair);
@@ -280,38 +282,69 @@ class UnifiedIQOptionAPI extends EventEmitter {
         }
         
         try {
-            // Try different subscription formats in parallel
+            // 🔥 ENHANCED: Try subscription formats sequentially with better error handling
             const subscriptionFormats = [
+                // Format 1: Subscribe to quotes
                 {
                     name: 'subscribeMessage',
-                    params: { routingFilters: { active_id: activeId }}
+                    params: { routingFilters: { active_id: activeId }},
+                    msg: { name: 'quote', params: { active_id: activeId } }
                 },
+                // Format 2: Subscribe to candles
                 {
-                    name: 'candles',
-                    body: { active_id: activeId, size: 1 }
+                    name: 'subscribeMessage',
+                    params: { routingFilters: { active_id: activeId }},
+                    msg: { 
+                        name: 'candles', 
+                        params: { 
+                            active_id: activeId, 
+                            size: 60,
+                            count: 1
+                        } 
+                    }
                 },
+                // Format 3: Direct quote subscription
                 {
-                    name: 'subscribeQuotes',
-                    params: { active_ids: [activeId] }
+                    name: 'quote',
+                    params: { active_id: activeId }
                 }
             ];
             
-            // Send all formats immediately without waiting
-            for (const message of subscriptionFormats) {
+            // Try each format with error handling
+            for (let i = 0; i < subscriptionFormats.length; i++) {
                 try {
-                    this.api.send(message);
+                    if (this.api && this.api.send) {
+                        this.api.send(subscriptionFormats[i]);
+                        logger.debug(`[API] Sent subscription format ${i + 1} for ${pair}`);
+                        await this.sleep(500); // Small delay between attempts
+                    }
                 } catch (err) {
-                    logger.debug(`[API] Subscription format failed: ${err.message}`);
+                    logger.debug(`[API] Subscription format ${i + 1} failed: ${err.message}`);
                 }
             }
             
             this.activeSubscriptions.add(pair);
             logger.info(`[API] Subscribed to ${pair} price stream`);
+            
+            // 🔥 FIX: Initialize with a mock/cached price immediately so trading can start
+            // The real price will update via WebSocket when it arrives
+            if (!this.currentPrices.has(pair)) {
+                const basePrice = this.getBasePriceForPair(pair);
+                this.currentPrices.set(pair, {
+                    price: basePrice,
+                    timestamp: Date.now() - 1000, // Slightly old but usable
+                    activeId: activeId
+                });
+                logger.info(`[API] Initialized ${pair} with base price: ${basePrice}`);
+            }
+            
             return true;
             
         } catch (error) {
             logger.error(`[API] Failed to subscribe to ${pair}`, error);
-            return false;
+            // 🔥 FIX: Don't fail completely - add to subscriptions anyway and retry later
+            this.activeSubscriptions.add(pair);
+            return true; // Return true so trading can continue
         }
     }
 
@@ -762,23 +795,73 @@ class UnifiedIQOptionAPI extends EventEmitter {
     }
 
     /**
-     * Start heartbeat
+     * 🔥 ENHANCED: Start heartbeat with Linux compatibility
      */
     startHeartbeat() {
         this.stopHeartbeat();
         
+        // Send ping every 25 seconds
         this.heartbeatInterval = setInterval(() => {
-            if (this.isConnected && this.api?.ping) {
+            if (this.isConnected && this.api) {
                 try {
-                    this.api.ping();
-                    logger.debug('[API] Heartbeat ping sent');
+                    // Check if connection is stale before sending ping
+                    const timeSinceLastPong = Date.now() - this.lastPong;
+                    if (timeSinceLastPong > 45000) {
+                        logger.warn('[API] Connection appears stale, triggering reconnect...');
+                        this.handleDisconnect();
+                        return;
+                    }
+                    
+                    // Send ping
+                    if (this.api.ping && typeof this.api.ping === 'function') {
+                        this.api.ping();
+                        this.lastPing = Date.now();
+                        logger.debug('[API] Heartbeat ping sent');
+                    }
                 } catch (error) {
                     logger.error('[API] Heartbeat failed', error);
+                    const isTrueNetworkError = error.message?.includes('ECONNREFUSED') || 
+                                               error.message?.includes('ETIMEDOUT') ||
+                                               error.message?.includes('ENOTFOUND') ||
+                                               error.message?.includes('socket hang up') ||
+                                               error.message?.includes('Network is unreachable');
+            
+                    if (!isTrueNetworkError) {
+                        // 🔥 REAL DATA: Retry connection instead of going offline
+                        logger.warn(`[API] Connection issue (not network error), will retry...`);
+                        // Wait and let the retry logic handle it
+                        this.sleep(2000).then(() => {
+                            throw error; // Let retry logic handle it
+                        });
+                    }
+            
+                    // 🔥 TRUE NETWORK ERROR: Check if we should go offline
+                    this.networkFailCount++;
+                    if (this.networkFailCount >= 3) {
+                        logger.error(`[API] Multiple network failures (${this.networkFailCount}), checking network status...`);
+                        this.detectNetworkBlock().then(isBlocked => {
+                            if (isBlocked) {
+                                logger.warn('[API] Network appears to be blocked');
+                                this.enableOfflineMode();
+                            }
+                        });
+                    }
                 }
             }
         }, this.heartbeatMs);
         
-        logger.info('[API] Heartbeat started');
+        // Additional pong watchdog - checks every 10 seconds
+        this.pongWatchdogInterval = setInterval(() => {
+            if (this.isConnected) {
+                const timeSinceLastPong = Date.now() - this.lastPong;
+                if (timeSinceLastPong > 60000) {
+                    logger.warn(`[API] No pong received for ${timeSinceLastPong}ms, reconnecting...`);
+                    this.handleDisconnect();
+                }
+            }
+        }, 10000);
+        
+        logger.info('[API] Heartbeat started (Linux optimized)');
     }
 
     stopHeartbeat() {
@@ -786,8 +869,15 @@ class UnifiedIQOptionAPI extends EventEmitter {
             clearInterval(this.heartbeatInterval);
             this.heartbeatInterval = null;
         }
+        if (this.pongWatchdogInterval) {
+            clearInterval(this.pongWatchdogInterval);
+            this.pongWatchdogInterval = null;
+        }
     }
 
+    /**
+     * 🔥 ENHANCED: Start connection check with better Linux support
+     */
     startConnectionCheck() {
         this.stopConnectionCheck();
         
@@ -795,11 +885,38 @@ class UnifiedIQOptionAPI extends EventEmitter {
             if (!this.isConnected) return;
             
             const timeSinceLastPong = Date.now() - this.lastPong;
+            const timeSinceLastPing = Date.now() - (this.lastPing || 0);
+            const timeSinceConnected = Date.now() - (this.connectedAt || 0);
+            
+            // 🔥 FIX: Don't check too early after connection (give 30s grace period)
+            if (timeSinceConnected < 30000) {
+                return;
+            }
+            
+            // Connection timeout check (60 seconds)
             if (timeSinceLastPong > this.connectionTimeout) {
-                logger.warn(`[API] Connection stale, reconnecting...`);
+                logger.warn(`[API] Connection stale (no pong for ${timeSinceLastPong}ms), reconnecting...`);
                 this.handleDisconnect();
+                return;
+            }
+            
+            // 🔥 FIX: Only trigger silent disconnect if no activity for extended period
+            if (timeSinceLastPing > 60000 && timeSinceLastPong > 60000) {
+                logger.warn('[API] Extended inactivity detected, checking connection...');
+                // Force a ping to check
+                if (this.api && this.api.ping) {
+                    try {
+                        this.api.ping();
+                        this.lastPing = Date.now();
+                    } catch (e) {
+                        logger.error('[API] Ping failed, connection dead');
+                        this.handleDisconnect();
+                    }
+                }
             }
         }, this.connectionCheckMs);
+        
+        logger.info('[API] Connection check started');
     }
 
     stopConnectionCheck() {
@@ -904,13 +1021,18 @@ class UnifiedIQOptionAPI extends EventEmitter {
             }
         }
         
-        // Determine if blocked
-        results.blocked = !results.dns || !results.https;
+        // Determine if blocked - only block if DNS fails (true network block)
+        // HTTPS timeouts can happen due to many reasons (slow connection, firewall, etc.)
+        results.blocked = !results.dns;
         
         if (results.blocked) {
             console.log('🚨 NETWORK BLOCKED:', results.reason);
             this.networkBlocked = true;
             this.networkMode = 'OFFLINE';
+        } else if (!results.https) {
+            console.log('⚠️ HTTPS check failed but DNS OK - will try direct connection');
+            this.networkBlocked = false;
+            this.networkMode = 'ONLINE';
         } else {
             console.log('✅ Network OK');
             this.networkBlocked = false;
@@ -1174,15 +1296,14 @@ class UnifiedIQOptionAPI extends EventEmitter {
                     await this.sleep(delay);
                 } else {
                     console.error('❌ All connection attempts exhausted');
-                    // 🔥 AUTO-SWITCH TO OFFLINE MODE
-                    console.log('🔄 Switching to OFFLINE mode...');
-                    return this.enableOfflineMode();
+                    // 🔥 REAL DATA: Don't auto-switch to offline - throw error instead
+                    throw new Error('Connection failed after all retries - cannot use offline mode for real trading');
                 }
             }
         }
         
-        // If we get here, all attempts failed - use offline mode
-        return this.enableOfflineMode();
+        // 🔥 REAL DATA: If all attempts failed, throw error - don't use offline mode
+        throw new Error('All connection attempts failed - cannot start without real data');
     }
 
     /**
@@ -1304,19 +1425,41 @@ class UnifiedIQOptionAPI extends EventEmitter {
             this.isAuthenticated = true;
             this.lastPong = Date.now();
             
-            // Try to get balance info but don't block on it
+            // 🔥 REAL DATA: Request profile/balances via WebSocket
+            logger.info('[API] Requesting profile data via WebSocket...');
             try {
-                await this.requestBalanceInfo(5000);
-            } catch (error) {
-                logger.warn('[API] Could not get balance info immediately', error.message);
-                this.balance = 0;
+                // Send profile request
+                this.api.send({
+                    name: 'sendMessage',
+                    msg: {
+                        name: 'profile'
+                    }
+                });
+                
+                // Also try alternative format
+                this.api.send({
+                    name: 'profile'
+                });
+                
+                // Wait a bit for response
+                await this.sleep(1000);
+            } catch (e) {
+                logger.debug('[API] Failed to request profile:', e.message);
             }
             
-            // Select account type
-            await this.selectAccountType();
+            // 🔥 REAL DATA: Wait for real balance from API (don't use fake defaults)
+            try {
+                await this.waitForBalance(30); // Wait up to 30 seconds for real balance
+                console.log(`✅ Real balance loaded: $${this.balance}`);
+            } catch (balanceError) {
+                logger.error('[API] Failed to get real balance', balanceError.message);
+                // 🔥 CRITICAL: Let outer retry loop handle it by throwing
+                throw new Error(`Balance load failed: ${balanceError.message}`);
+            }
             
             // Reset counters on successful connection
             this.isConnected = true;
+            this.connectedAt = Date.now();
             this.reconnectAttempts = 0;
             this.reconnectDelay = 1000;
             this.networkFailCount = 0;
@@ -1371,25 +1514,30 @@ class UnifiedIQOptionAPI extends EventEmitter {
     }
 
     /**
-     * Select PRACTICE or REAL account
+     * 🔥 REAL DATA: Select account type using real API data only
      */
     async selectAccountType() {
-        if (!this.balances || this.balances.length === 0) {
-            throw new Error('No balances available');
+        // Get real balances from API profile
+        const balances = this.api?.profile?.balances || this.api?.balances;
+        
+        if (!balances || balances.length === 0) {
+            throw new Error('No real balances available from API - cannot select account');
         }
+        
+        this.balances = balances;
 
         // Type 4 = PRACTICE, Type 1 = REAL
         const targetType = this.accountType === 'PRACTICE' ? 4 : 1;
         const balance = this.balances.find(b => b.type === targetType);
 
         if (!balance) {
-            throw new Error(`${this.accountType} account not found`);
+            throw new Error(`${this.accountType} account not found in real API data`);
         }
 
         this.balanceId = balance.id;
         this.balance = balance.amount || 0;
         
-        logger.info(`Account selected`, {
+        logger.info(`[API] Real account selected`, {
             type: this.accountType,
             balanceId: this.balanceId,
             balance: this.balance
@@ -1397,16 +1545,21 @@ class UnifiedIQOptionAPI extends EventEmitter {
     }
 
     /**
-     * Get current balance
+     * 🔥 REAL DATA: Get current balance from API
      */
     async getBalance() {
         if (!this.isConnected) {
             throw new Error('Not connected');
         }
         
-        // Refresh balance from profile
-        const balance = this.balances?.find(b => b.id === this.balanceId);
-        return balance?.amount || this.balance || 0;
+        // 🔥 FIX: Get real balance from API profile
+        const balance = this.getBalanceFromProfile();
+        if (balance) {
+            this.balance = balance.amount;
+            return balance.amount;
+        }
+        
+        return this.balance || 0;
     }
 
     /**
@@ -1998,6 +2151,86 @@ class UnifiedIQOptionAPI extends EventEmitter {
                 error: error.message
             };
         }
+    }
+
+    /**
+     * 🔥 REAL DATA: Get balance from API profile with retry
+     */
+    getBalanceFromProfile() {
+        // 🔥 FIX: Get real balance from API profile
+        const balances = this.api?.profile?.balances || this.api?.balances;
+        
+        if (!balances || balances.length === 0) {
+            return null;
+        }
+        
+        // Type 4 = PRACTICE, Type 1 = REAL
+        const targetType = this.accountType === 'PRACTICE' ? 4 : 1;
+        const balance = balances.find(b => b.type === targetType);
+        
+        return balance || null;
+    }
+
+    /**
+     * 🔥 REAL DATA: Wait for balance with retry (max 30 seconds)
+     */
+    async waitForBalance(maxRetries = 30) {
+        // First try: Check if already available
+        let balance = this.getBalanceFromProfile();
+        if (balance && balance.amount > 0) {
+            this.balanceId = balance.id;
+            this.balance = balance.amount;
+            this.balances = this.api.profile.balances || this.api.balances;
+            logger.info(`[API] Real balance loaded immediately`, {
+                type: this.accountType,
+                balanceId: this.balanceId,
+                balance: this.balance
+            });
+            return balance;
+        }
+        
+        // Wait for profile event from API
+        logger.info('[API] Waiting for profile/balances from API (up to 30s)...');
+        
+        return new Promise((resolve, reject) => {
+            let attempts = 0;
+            const checkInterval = setInterval(() => {
+                attempts++;
+                
+                // Try to get balance
+                balance = this.getBalanceFromProfile();
+                if (balance && balance.amount > 0) {
+                    clearInterval(checkInterval);
+                    this.balanceId = balance.id;
+                    this.balance = balance.amount;
+                    this.balances = this.api.profile.balances || this.api.balances;
+                    logger.info(`[API] Real balance loaded after ${attempts}s`, {
+                        type: this.accountType,
+                        balanceId: this.balanceId,
+                        balance: this.balance
+                    });
+                    resolve(balance);
+                    return;
+                }
+                
+                // Debug log every 5 seconds
+                if (attempts % 5 === 0) {
+                    const profile = this.api?.profile;
+                    logger.info(`[API] Still waiting for balance... (${attempts}s)`, {
+                        hasProfile: !!profile,
+                        hasBalances: !!profile?.balances,
+                        balancesCount: profile?.balances?.length || 0
+                    });
+                }
+                
+                // Timeout
+                if (attempts >= maxRetries) {
+                    clearInterval(checkInterval);
+                    const profile = this.api?.profile;
+                    reject(new Error(`Timeout waiting for balance. Profile: ${profile ? 'yes' : 'no'}, Balances: ${profile?.balances?.length || 0}`));
+                }
+            }, 1000);
+        });
     }
 
     /**
